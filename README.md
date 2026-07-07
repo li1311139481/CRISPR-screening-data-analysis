@@ -87,7 +87,7 @@ Rscript -e 'library(MAGeCKFlute); message("OK")'
 ## Repository structure
 
 ```text
-klf2-exhausted-t-cell-crispr-screen/
+CRISPR-screening-data-analysis/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
@@ -102,6 +102,12 @@ klf2-exhausted-t-cell-crispr-screen/
 │   ├── TF_library.csv
 │   ├── TF_library_control_id.txt
 │   └── meta.data.csv
+├── rawdata/
+│   ├── S1/
+│   │   └── S1_1.fq.gz
+│   ├── S2/
+│   │   └── S2_1.fq.gz
+│   └── ...
 ├── examples/
 │   ├── demo_project_structure.txt  # Expected project directory layout
 │   ├── demo_run.sh                 # Example run script
@@ -153,11 +159,9 @@ klf2-exhausted-t-cell-crispr-screen/
 project/
 ├── rawdata/
 │   ├── S1/
-│   │   ├── S1_1.fq.gz
-│   │   └── S1_2.fq.gz
+│   │   └── S1_1.fq.gz
 │   ├── S2/
-│   │   ├── S2_1.fq.gz
-│   │   └── S2_2.fq.gz
+│   │   └── S2_1.fq.gz
 │   └── ...
 └── meta.data.csv
 ```
