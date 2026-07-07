@@ -1,9 +1,6 @@
-# Raw sequencing data (demo data excluded from repo for size)
-rawdata/
+# Raw sequencing data intermediates
 *.fq
 *.fastq
-*.fq.gz
-*.fastq.gz
 
 # Alignment and large intermediate files
 *.sam

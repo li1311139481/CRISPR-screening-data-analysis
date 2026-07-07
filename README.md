@@ -120,6 +120,8 @@ CRISPR-screening-data-analysis/
     └── README.md
 ```
 
+> **Note:** The `rawdata/` files in this repository are **downsampled demo data** (80万 reads per sample) for testing the workflow. Full-size data should be prepared following the layout described in [Input files](#input-files).
+
 ## Requirements
 
 | Software | Version | Purpose |
