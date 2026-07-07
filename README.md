@@ -287,7 +287,7 @@ Example: `TF_Day7_Total.vs.Input/`
 
 - The adapter sequence (`TTGTGGAAAGGACGAAACACCG...GTTTTAGAGCTAGAAATAGCAA`) targets the lentiGuide-Puro vector. Adjust `run_cutadapt.sh` if using a different vector backbone.
 - `VolcanoView.pdf` serves as a completion marker — if it exists, that comparison is skipped on re-run.
-- Replace the config files in `config/` with your own library and metadata files before running.
+- Replace `config/TF_library.csv` and `config/TF_library_control_id.txt` with your own library files, and edit `meta.data.csv` to match your sample metadata before running.
 - This workflow was developed for mouse CRISPR screens using `org.Mm.eg.db`. For human screens, update `mageck_flute.R` to use `org.Hs.eg.db`.
 
 ## Citation

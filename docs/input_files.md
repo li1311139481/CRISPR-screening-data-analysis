@@ -6,7 +6,7 @@ Raw FASTQ files should be organized under the project `rawdata` directory:
 
 ```text
 rawdata/S1/S1_1.fq.gz
-rawdata/S1/S1_2.fq.gz
+rawdata/S2/S2_1.fq.gz
 ```
 
 ## meta.data.csv
