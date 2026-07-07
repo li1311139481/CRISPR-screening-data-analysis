@@ -91,6 +91,7 @@ CRISPR-screening-data-analysis/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
+├── meta.data.csv
 ├── environment.yml
 ├── requirements.txt
 ├── scripts/
@@ -100,8 +101,7 @@ CRISPR-screening-data-analysis/
 │   └── mageck_flute.R              # Step 2 (worker): QC & visualization
 ├── config/
 │   ├── TF_library.csv
-│   ├── TF_library_control_id.txt
-│   └── meta.data.csv
+│   └── TF_library_control_id.txt
 ├── rawdata/
 │   ├── S1/
 │   │   └── S1_1.fq.gz
