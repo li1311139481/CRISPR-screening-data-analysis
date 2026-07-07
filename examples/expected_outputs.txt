@@ -1,0 +1,21 @@
+After a successful run, each comparison is written to a directory named:
+
+TF_<treatment>.vs.<control>/
+
+Example outputs:
+
+TF_Day7_Total.vs.Input/
+├── Day7_Total.vs.Input_count.count.txt
+├── Day7_Total.vs.Input_count.count_normalized.txt
+├── Day7_Total.vs.Input_count.countsummary.txt
+├── Day7_Total.vs.Input_count.log
+├── Day7_Total.vs.Input_test.gene_summary.txt
+├── Day7_Total.vs.Input_test.sgrna_summary.txt
+├── Day7_Total.vs.Input_test.log
+├── Day7_Total.vs.Input_gene_summary.csv
+├── Day7_Total.vs.Input_mix_gene_summary.csv
+├── Day7_Total.vs.Input_MAGeCKFlute_report.pdf
+├── MapRatesView.pdf
+├── GiniIndexView.pdf
+├── MissedsgRNAView.pdf
+└── VolcanoView.pdf

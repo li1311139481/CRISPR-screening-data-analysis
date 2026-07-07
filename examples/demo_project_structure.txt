@@ -1,0 +1,10 @@
+project/
+├── rawdata/
+│   ├── S1/
+│   │   └── S1_1.fq.gz
+│   ├── S2/
+│   │   └── S2_1.fq.gz
+│   └── ...
+├── meta.data.csv
+├── cutadapt/
+└── count/

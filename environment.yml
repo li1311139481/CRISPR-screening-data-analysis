@@ -1,0 +1,24 @@
+name: crispr-screen-analysis
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - cutadapt=4.8
+  - mageck=0.5.9.5
+  - parallel
+  - jq
+  - libnsl
+  - r-base=4.4
+  - r-ggplot2
+  - r-dplyr
+  - r-data.table
+  - r-scales
+  - bioconductor-org.mm.eg.db
+  - bioconductor-clusterprofiler
+  - bioconductor-mageckflute
+  - pip

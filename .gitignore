@@ -1,0 +1,40 @@
+# Raw sequencing data (demo data excluded from repo for size)
+rawdata/
+*.fq
+*.fastq
+*.fq.gz
+*.fastq.gz
+
+# Alignment and large intermediate files
+*.sam
+*.bam
+*.bai
+
+# Generated analysis outputs
+cutadapt/
+count/
+TF_*.vs.*/
+commands.sh
+run.slurm
+*.slurm
+*.out
+*.err
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS
+.DS_Store
+
+# Optional generated plots/reports in root
+*.pdf
+*.png
+*.svg
