@@ -212,7 +212,7 @@ Neg_control_2
 
 ### Step 1: Extract sgRNA spacers
 
-The adapter sequence targets the lentiGuide-Puro vector backbone (`TTGTGGAAAGGACGAAACACCG...GTTTTAGAGCTAGAAATAGCAA`).
+The adapter sequence targets the vector backbone used in this protocol (`TTGTGGAAAGGACGAAACACCG...GTTTTAGAGCTAGAAATAGCAA`).
 
 ```bash
 DIR=/path/to/project
@@ -285,7 +285,7 @@ Example: `TF_Day7_Total.vs.Input/`
 
 ## Notes
 
-- The adapter sequence (`TTGTGGAAAGGACGAAACACCG...GTTTTAGAGCTAGAAATAGCAA`) targets the lentiGuide-Puro vector. Adjust `run_cutadapt.sh` if using a different vector backbone.
+- If using a different vector backbone, adjust the adapter sequence in `run_cutadapt.sh` accordingly.
 - `VolcanoView.pdf` serves as a completion marker — if it exists, that comparison is skipped on re-run.
 - Replace `config/TF_library.csv` and `config/TF_library_control_id.txt` with your own library files, and edit `meta.data.csv` to match your sample metadata before running.
 - This workflow was developed for mouse CRISPR screens using `org.Mm.eg.db`. For human screens, update `mageck_flute.R` to use `org.Hs.eg.db`.
