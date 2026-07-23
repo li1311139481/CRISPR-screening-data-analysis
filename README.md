@@ -98,7 +98,8 @@ CRISPR-screening-data-analysis/
 │   ├── run_cutadapt.sh             # Step 1: sgRNA spacer extraction
 │   ├── screening_run_all.py        # Step 2: pairwise comparison generator
 │   ├── mageck.py                   # Step 2 (worker): MAGeCK count + test
-│   └── mageck_flute.R              # Step 2 (worker): QC & visualization
+│   ├── mageck_flute.R              # Step 2 (worker): QC & visualization
+│   └── plot_library_qc.py          # Library QC: KDE / Skew ratio / AUC plots
 ├── config/
 │   ├── TF_library.csv
 │   └── TF_library_control_id.txt
