@@ -90,7 +90,16 @@ def main() -> None:
             sample_labels,
             comparison_name,
         ]
-        run_command(cmd_flute)
+        # MAGeCKFlute 报告作为独立手动步骤：写入比较目录，不自动执行
+        flute_script_path = os.path.join(mageck_folder_name, "run_flute.sh")
+        flute_cmd_str = " ".join("'" + c.replace("'", "'\\''") + "'" for c in cmd_flute)
+        with open(flute_script_path, "w", encoding="utf-8") as f:
+            f.write("#!/bin/bash\n")
+            f.write("set -euo pipefail\n")
+            f.write(flute_cmd_str + "\n")
+        os.chmod(flute_script_path, 0o750)
+        print("[INFO] MAGeCKFlute 报告命令已写入以下文件（不自动执行，需手动运行）：")
+        print(f"  bash {flute_script_path}")
 
 
 if __name__ == "__main__":
