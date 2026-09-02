@@ -18,6 +18,11 @@ DIR=$(pwd)
 # 3. Run the analysis
 bash examples/demo_run.sh
 sbatch run.slurm
+python scripts/plot_library_qc.py \
+  -i TF_Day7_Total.vs.Input/Day7_Total.vs.Input_count.count.txt \
+  -s Input_1 \
+  -o /project/qc_pdf${DIR}/
+Rscript scripts/mageck_flute.R ${DIR}/TF_Day7_Total.vs.Input/ Input_1,Input_2,Day7_Total_1,Day7_Total_2,Day7_Total_3 Day7_Total.vs.Input
 ```
 
 ## Workflow
