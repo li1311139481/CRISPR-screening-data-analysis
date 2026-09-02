@@ -123,11 +123,15 @@ def main() -> None:
     #   - run per-comparison MAGeCKFlute report (each comparison dir's run_flute.sh)
     # Only appended when --with-postprocess is given (e.g. via demo_run.sh);
     # a bare `screening_run_all.py --submit` runs count/test only.
+    # Because postprocess.py now defaults to merging only, pass --qc --flute here
+    # so the one-command end-to-end path still produces library QC and MAGeCKFlute
+    # reports in addition to all_samples.count.txt.
     postprocess_line = ""
     if args.with_postprocess:
         postprocess_cmd = " ".join([
             q(args.python), q(postprocess_script),
             "-d", q(DIR), "-n", q(prefix),
+            "--qc", "--flute",
         ])
         postprocess_line = f"""
 # --- Post-processing: merge counts, library QC, MAGeCKFlute reports ---

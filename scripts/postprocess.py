@@ -79,12 +79,18 @@ def run_flute_all(DIR: str, prefix: str) -> None:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Post-process MAGeCK outputs: merge counts, run QC and MAGeCKFlute")
+    ap = argparse.ArgumentParser(
+        description="Post-process MAGeCK outputs: merge count tables by default; "
+                    "optionally also run library QC (--qc) and/or MAGeCKFlute reports (--flute).")
     ap.add_argument("-d", "--DIR", required=True, help="Project working directory")
     ap.add_argument("-n", "--prefix", default="TF", help="Output folder prefix, e.g. TF")
     ap.add_argument("--python", default="python",
                     help="Python executable to run plot_library_qc.py (default 'python', resolved from PATH)")
     ap.add_argument("-s", "--scripts", default=None, help="Path to scripts dir (default: alongside this file)")
+    ap.add_argument("--qc", action="store_true",
+                    help="Also run per-sample library QC (plot_library_qc.py --all) after merging")
+    ap.add_argument("--flute", action="store_true",
+                    help="Also run MAGeCKFlute report for every comparison after merging")
     ap.add_argument("--flute-only", action="store_true",
                     help="Only run MAGeCKFlute reports for every comparison (skip merging/QC)")
     args = ap.parse_args()
@@ -94,23 +100,30 @@ def main() -> None:
     qc_script = os.path.join(script_dir, "plot_library_qc.py")
 
     count_tables = find_count_tables(DIR, args.prefix)
+
+    # --flute-only: regenerate every comparison's MAGeCKFlute report only.
+    if args.flute_only:
+        if not count_tables:
+            print(f"[postprocess] No count tables found under {DIR}/{args.prefix}_*.vs.* — nothing to do.")
+            return
+        run_flute_all(DIR, args.prefix)
+        return
+
     if not count_tables:
         print(f"[postprocess] No count tables found under {DIR}/{args.prefix}_*.vs.* — nothing to do.")
         return
 
-    # --flute-only: regenerate every comparison's MAGeCKFlute report only.
-    if args.flute_only:
-        run_flute_all(DIR, args.prefix)
-        return
-
+    # Default behaviour: merge per-comparison count tables into all_samples.count.txt.
     all_counts = os.path.join(DIR, "all_samples.count.txt")
     merge_counts(count_tables, all_counts)
 
-    # QC output lives at project root: library_qc_<sample>.pdf
-    # (plot_library_qc.py --all regenerates every sample's PDF)
-    run_qc(DIR, all_counts, [], args.python, qc_script)
+    # Optional per-sample library QC (regenerates library_qc_<sample>.pdf at project root).
+    if args.qc:
+        run_qc(DIR, all_counts, [], args.python, qc_script)
 
-    run_flute_all(DIR, args.prefix)
+    # Optional MAGeCKFlute report for every comparison.
+    if args.flute:
+        run_flute_all(DIR, args.prefix)
 
 
 if __name__ == "__main__":
