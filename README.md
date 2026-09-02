@@ -13,6 +13,8 @@ conda activate crispr-screen-analysis
 # Rscript -e 'BiocManager::install("MAGeCKFlute")'
 
 # 2. Prepare your project (see Input files below)
+cd /path/to/your/project
+DIR=$(pwd)
 # 3. Run the analysis
 bash examples/demo_run.sh
 sbatch run.slurm
