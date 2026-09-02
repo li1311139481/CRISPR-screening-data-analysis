@@ -17,6 +17,7 @@ run.slurm
 *.out
 *.err
 *.log
+all_samples.count.txt
 
 # Python
 __pycache__/
@@ -30,6 +31,7 @@ __pycache__/
 
 # OS
 .DS_Store
+.nfs*
 
 # Optional generated plots/reports in root
 *.pdf

@@ -5,24 +5,36 @@ A computational workflow for pooled CRISPR screen sequencing analysis. The workf
 ## Quick start
 
 ```bash
-# 1. Install conda environment
+# 1. Clone and enter the repository
+git clone https://github.com/li1311139481/CRISPR-screening-data-analysis.git
+cd CRISPR-screening-data-analysis
+DIR=$(pwd)
+
+# 2. Install conda environment
 conda env create -f environment.yml
 conda activate crispr-screen-analysis
 
 # If MAGeCKFlute fails to install via conda, install from Bioconductor:
 # Rscript -e 'BiocManager::install("MAGeCKFlute")'
 
-# 2. Prepare your project (see Input files below)
-cd /path/to/your/project
-DIR=$(pwd)
-# 3. Run the analysis
-bash examples/demo_run.sh
+# 3. Prepare your own project data (see Input files below):
+#    - rawdata/<sample_number>/<sample_number>_1.fq.gz
+#    - meta.data.csv
+
+# 4. Run the full analysis. ${DIR} is your project directory containing
+#    rawdata/ + meta.data.csv.
+bash examples/demo_run.sh ${DIR}
 sbatch run.slurm
-python scripts/plot_library_qc.py \
-  -i TF_Day7_Total.vs.Input/Day7_Total.vs.Input_count.count.txt \
-  -s Input_1 \
-  -o ${DIR}/
-Rscript scripts/mageck_flute.R ${DIR}/TF_Day7_Total.vs.Input/ Input_1,Input_2,Day7_Total_1,Day7_Total_2,Day7_Total_3 Day7_Total.vs.Input
+
+# After the Slurm job finishes, these outputs are produced automatically:
+#   - per-comparison MAGeCK count/test results
+#   - per-comparison MAGeCKFlute reports (VolcanoView.pdf, QC plots, ...)
+#   - per-sample library QC plots at the project root (library_qc_<sample>.pdf)
+#   - a merged all-samples count table at all_samples.count.txt
+#
+# 5. (Optional) Re-generate figures on demand. See "Step 4: Batch plotting" below.
+python scripts/plot_library_qc.py -i ${DIR}/all_samples.count.txt --all -o ${DIR}/
+python scripts/postprocess.py -d ${DIR} -n TF --flute-only
 ```
 
 ## Workflow
@@ -42,18 +54,24 @@ Rscript scripts/mageck_flute.R ${DIR}/TF_Day7_Total.vs.Input/ Input_1,Input_2,Da
   │  - all pairwise group comparisons    │
   │  - generates commands.sh + run.slurm │
   └────────────────┬─────────────────────┘
-                   │
+                   │  (parallel, per comparison)
                    ▼
   ┌──────────────────────────────────────┐
   │           mageck.py                  │
-  │  ┌──────────┐  ┌──────────┐          │
-  │  │ count    │→ │   test   │          │
-  │  └──────────┘  └────┬─────┘          │
-  │                     ▼                │
-  │  ┌──────────────────────────────┐    │
-  │  │     mageck_flute.R           │    │
-  │  │  QC plots + volcano + report │    │
-  │  └──────────────────────────────┘    │
+  │  ┌──────────┐   ┌──────────┐         │
+  │  │  count   │ → │   test   │         │
+  │  └──────────┘   └────┬─────┘         │
+  │                      │ writes run_flute.sh per comparison │
+  └──────────────────────┼────────────────┘
+                         ▼
+  ┌──────────────────────────────────────┐
+  │           postprocess.py             │
+  │  - merge all count tables            │
+  │    -> all_samples.count.txt          │
+  │  - per-sample library QC             │
+  │    (plot_library_qc.py, overwrites)  │
+  │  - per-comparison MAGeCKFlute report │
+  │    (mageck_flute.R via run_flute.sh) │
   └──────────────────────────────────────┘
 ```
 
@@ -85,7 +103,7 @@ conda activate crispr-screen-analysis
 ### Verify
 
 ```bash
-cutadapt --version             # 4.8
+cutadapt --version             # any (no specific version pinned)
 mageck --version               # 0.5.9.5
 parallel --version             # any
 python -c "import pandas; print('pandas', pandas.__version__)"
@@ -106,7 +124,8 @@ CRISPR-screening-data-analysis/
 │   ├── run_cutadapt.sh             # Step 1: sgRNA spacer extraction
 │   ├── screening_run_all.py        # Step 2: pairwise comparison generator
 │   ├── mageck.py                   # Step 2 (worker): MAGeCK count + test
-│   ├── mageck_flute.R              # Step 2 (worker): QC & visualization
+│   ├── postprocess.py              # Step 2 (worker): merge counts + library QC + MAGeCKFlute
+│   ├── mageck_flute.R              # MAGeCKFlute QC & visualization (R)
 │   └── plot_library_qc.py          # Library QC: KDE / Skew ratio / AUC plots
 ├── config/
 │   ├── TF_library.csv
@@ -135,7 +154,7 @@ CRISPR-screening-data-analysis/
 
 | Software | Version | Purpose |
 |----------|---------|---------|
-| cutadapt | >= 4.0 | sgRNA spacer extraction |
+| cutadapt | any | sgRNA spacer extraction |
 | MAGeCK | >= 0.5.9 | sgRNA count and statistical test |
 | Python | >= 3.10 | Workflow orchestration |
 | R | >= 4.4 | MAGeCKFlute QC and visualization |
@@ -149,6 +168,9 @@ CRISPR-screening-data-analysis/
 | pandas | Data manipulation |
 | numpy | Numerical computation |
 | matplotlib | Volcano plot generation |
+| scipy | Library QC density estimation |
+
+All Python packages above are already declared in `environment.yml`, so `conda env create -f environment.yml` sets everything up. `requirements.txt` is provided as a lightweight alternative (e.g. `pip install -r requirements.txt`) when you only need the Python components and will manage MAGeCK/R separately.
 
 ### R packages
 
@@ -254,8 +276,10 @@ python scripts/screening_run_all.py \
 | `-p` | Number of parallel MAGeCK jobs |
 | `--submit` | Automatically submit the Slurm job |
 | `--nodelist` | Slurm nodelist (e.g. node2), omit if not needed |
-| `--python` | Python executable path (default: current interpreter) |
+| `--partition` | Slurm partition name (omit to use the cluster default) |
+| `--python` | Python executable to embed in generated commands (default `python`, resolved from PATH after `conda activate`) |
 | `--mageck-wrapper` | Path to `mageck.py` (default: auto-detect) |
+| `--with-postprocess` | Also merge counts + generate library QC + MAGeCKFlute reports after count/test (used by `demo_run.sh`) |
 
 The script generates `n × (n - 1)` directional pairwise comparisons from all groups in `meta.data.csv`. Comparisons that already have `VolcanoView.pdf` are automatically skipped, allowing safe re-runs on incomplete analyses.
 
@@ -264,6 +288,25 @@ Without `--submit`, only `commands.sh` and `run.slurm` are generated. Submit man
 ```bash
 sbatch run.slurm
 ```
+
+By default, `run.slurm` only runs the parallel MAGeCK **count/test** jobs. To also
+auto-generate the merged count table, per-sample library QC, and per-comparison
+MAGeCKFlute reports after count/test finish, pass `--with-postprocess` (this is what
+`examples/demo_run.sh` does):
+
+```bash
+python scripts/screening_run_all.py \
+    -d ${DIR} -l config/TF_library.csv -c config/TF_library_control_id.txt \
+    -p 8 -n TF --submit --with-postprocess
+```
+
+With `--with-postprocess`, `run.slurm` runs `scripts/postprocess.py` after `parallel`, which:
+
+1. merges every comparison's `*_count.count.txt` into a single project-level table `all_samples.count.txt`;
+2. generates a per-sample library QC plot `library_qc_<sample>.pdf` in the project root;
+3. runs the per-comparison MAGeCKFlute report for every comparison directory (`bash {dir}/run_flute.sh`).
+
+So you only need to submit the job once; all outputs are produced end-to-end.
 
 ### Step 3: Inspect outputs
 
@@ -291,6 +334,48 @@ Example: `TF_Day7_Total.vs.Input/`
 | `MissedsgRNAView.pdf` | Missed sgRNA ratio plot |
 | `VolcanoView.pdf` | MAGeCKFlute volcano plot (also serves as completion marker) |
 | `*_MAGeCKFlute_report.pdf` | Combined QC and volcano report |
+
+**Project-level outputs (written to the project root by the post-processing step):**
+
+| File | Description |
+|------|-------------|
+| `all_samples.count.txt` | Merged sgRNA count table across all samples |
+| `library_qc_<sample>.pdf` | Per-sample library QC (KDE / skew ratio / AUC) |
+
+### Step 4: Batch plotting (re-generate all figures in one command)
+
+The automated `run.slurm` already produces these figures. If you want to re-generate
+them **on demand** after the analysis, two commands cover everything:
+
+**a) All-samples library QC** (one PDF per sample, project root):
+
+```bash
+python scripts/plot_library_qc.py \
+  -i ${DIR}/all_samples.count.txt \
+  --all \
+  -o ${DIR}/
+```
+
+**b) MAGeCKFlute report for every comparison** (VolcanoView + QC plots +
+integrated report per comparison directory):
+
+```bash
+python scripts/postprocess.py \
+  -d ${DIR} \
+  -n TF \
+  --flute-only
+```
+
+Both commands **overwrite** any existing PDFs, so you can re-run them at any time
+without having to delete old output files first.
+
+For **one** comparison as a quick check, run that comparison's own script
+(generated by `mageck.py`):
+
+```bash
+Rscript scripts/mageck_flute.R ${DIR}/TF_Day7_Total.vs.Input/ \
+  Input_1,Input_2,Day7_Total_1,Day7_Total_2,Day7_Total_3 Day7_Total.vs.Input
+```
 
 ## Notes
 

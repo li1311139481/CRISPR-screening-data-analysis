@@ -137,6 +137,10 @@ def make_pdf(counts, sample, outdir, keep_png=False):
     """生成一个样本的三图合并 PDF (文件名带样本名), 可选保留 PNG。返回 (pdf_path, skew, auc)"""
     os.makedirs(outdir, exist_ok=True)
     pdf_path = os.path.join(outdir, f"library_qc_{sample}.pdf")
+    # Remove any existing PDF first: PdfPages appends by default, so this
+    # guarantees a clean overwrite on every run.
+    if os.path.exists(pdf_path):
+        os.remove(pdf_path)
 
     with PdfPages(pdf_path) as pdf:
         fig3 = fig3_kde(counts, sample)
@@ -183,6 +187,7 @@ def main():
         samples = list_samples(args.input)
         print(f"发现 {len(samples)} 个样本, 开始批量生成 PDF -> {args.outdir}")
         for s in samples:
+            # Always regenerate (overwrite) so re-runs are unambiguous.
             counts = load_counts(args.input, s)
             pdf_path, skew, auc = make_pdf(counts, s, args.outdir, keep_png=args.png)
             flag_s = "PASS" if skew < 10 else "FAIL"

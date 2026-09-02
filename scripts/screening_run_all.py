@@ -5,7 +5,6 @@ import argparse
 import os
 import shlex
 import subprocess as sb
-import sys
 from itertools import permutations
 
 import pandas as pd
@@ -25,8 +24,17 @@ def main() -> None:
     parser.add_argument("-m", "--metadata", default=None, help="Path to meta.data.csv (default: DIR/meta.data.csv)")
     parser.add_argument("--submit", action="store_true", help="Submit run.slurm automatically")
     parser.add_argument("--nodelist", default=None, help="Slurm nodelist (e.g. node2), omit if not needed")
-    parser.add_argument("--python", default=sys.executable, help="Python executable")
+    parser.add_argument("--partition", default=None, help="Slurm partition name (omit to use the cluster default)")
+    parser.add_argument("--python", default="python",
+                        help="Python executable to embed in generated commands "
+                             "(default 'python' -> resolved from PATH after `conda activate`; "
+                             "override with an absolute path only if needed)")
     parser.add_argument("--mageck-wrapper", default=None, help="Path to mageck.py wrapper")
+    parser.add_argument("--with-postprocess", action="store_true",
+                        help="After parallel count/test jobs, also run postprocess.py "
+                             "(merge counts + per-sample library QC + per-comparison "
+                             "MAGeCKFlute reports). Off by default; enable it when you "
+                             "want the one-command end-to-end run (e.g. via demo_run.sh).")
     args = parser.parse_args()
 
     DIR = os.path.abspath(args.DIR)
@@ -105,17 +113,36 @@ def main() -> None:
         return
 
     nodelist_line = f"#SBATCH --nodelist={args.nodelist}\n" if args.nodelist else ""
+    # Partition is cluster-specific. Only emit the line when the user opts in;
+    # otherwise let Slurm use the cluster's default partition.
+    partition_line = f"#SBATCH --partition={args.partition}\n" if args.partition else ""
+    postprocess_script = os.path.join(script_dir, "postprocess.py")
+    # Post-processing runs serially AFTER all parallel MAGeCK jobs finish:
+    #   - merge all comparison count tables -> all_samples.count.txt
+    #   - run per-sample library QC (plot_library_qc.py --all)
+    #   - run per-comparison MAGeCKFlute report (each comparison dir's run_flute.sh)
+    # Only appended when --with-postprocess is given (e.g. via demo_run.sh);
+    # a bare `screening_run_all.py --submit` runs count/test only.
+    postprocess_line = ""
+    if args.with_postprocess:
+        postprocess_cmd = " ".join([
+            q(args.python), q(postprocess_script),
+            "-d", q(DIR), "-n", q(prefix),
+        ])
+        postprocess_line = f"""
+# --- Post-processing: merge counts, library QC, MAGeCKFlute reports ---
+{postprocess_cmd}
+"""
     slurm_content = f"""#!/bin/bash
 #SBATCH -J {prefix}
 #SBATCH -o {DIR}/%j.%x.out
 #SBATCH -e {DIR}/%j.%x.err
-#SBATCH --partition=cpu
-#SBATCH --cpus-per-task={parallel}
+{partition_line}#SBATCH --cpus-per-task={parallel}
 {nodelist_line}
 set -euo pipefail
 
 parallel --jobs {parallel} < {command_file}
-"""
+{postprocess_line}"""
 
     slurm_file = os.path.join(DIR, "run.slurm")
     with open(slurm_file, "w", encoding="utf-8") as f:

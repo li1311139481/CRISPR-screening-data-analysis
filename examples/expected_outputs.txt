@@ -19,3 +19,8 @@ TF_Day7_Total.vs.Input/
 ├── GiniIndexView.pdf
 ├── MissedsgRNAView.pdf
 └── VolcanoView.pdf
+
+Project root (written by the post-processing step):
+├── all_samples.count.txt        # merged sgRNA counts across all samples
+├── library_qc_<sample>.pdf      # per-sample library QC (KDE / skew / AUC)
+└── ...
