@@ -1,14 +1,15 @@
 name: crispr-screen-analysis
 channels:
-  - bioconda
   - conda-forge
+  - bioconda
   - defaults
 dependencies:
   - python=3.10
   - pandas
   - numpy
   - matplotlib
-  - cutadapt=4.8
+  - scipy
+  - cutadapt
   - mageck=0.5.9.5
   - parallel
   - jq
@@ -18,7 +19,7 @@ dependencies:
   - r-dplyr
   - r-data.table
   - r-scales
-  - bioconductor-org.mm.eg.db
-  - bioconductor-clusterprofiler
-  - bioconductor-mageckflute
+  - bioconductor-org.mm.eg.db=3.20.0
+  - bioconductor-clusterprofiler=4.14.0
+  - bioconductor-mageckflute=2.9.0
   - pip
