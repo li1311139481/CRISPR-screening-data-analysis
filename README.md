@@ -15,6 +15,7 @@ conda activate crispr-screen-analysis
 # 2. Prepare your project (see Input files below)
 # 3. Run the analysis
 bash examples/demo_run.sh
+sbatch run.slurm
 ```
 
 ## Workflow
