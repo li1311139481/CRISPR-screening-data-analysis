@@ -5,5 +5,5 @@ This directory is intentionally left empty. Raw FASTQ files and full MAGeCK outp
 After running the workflow, comparison-specific result directories will be generated under the project directory, for example:
 
 ```text
-TF_Day7.5_Total.vs.Input/
+TF_Day7_Total.vs.Input/
 ```
