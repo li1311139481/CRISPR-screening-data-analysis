@@ -15,8 +15,8 @@ def run_command(cmd: List[str]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run MAGeCK analysis for one comparison")
-    parser.add_argument("-g", "--group_name", required=True, help="Control and treatment group names, e.g. Input,Day7_Total")
-    parser.add_argument("-n", "--sample_name", required=True, help="Control and treatment sample labels, e.g. Input_1,Input_2--Day7_Total_1,Day7_Total_2")
+    parser.add_argument("-g", "--group_name", required=True, help="Control and treatment group names, e.g. Input,Day7.5_Total")
+    parser.add_argument("-n", "--sample_name", required=True, help="Control and treatment sample labels, e.g. Input_1,Input_2--Day7.5_Total_1,Day7.5_Total_2")
     parser.add_argument("-i", "--sample_file", required=True, help="Comma-separated trimmed FASTQ files")
     parser.add_argument("-d", "--DIR", default=None, help="Project working directory")
     parser.add_argument("-p", "--prefix", default="mageck", help="Output folder prefix")
