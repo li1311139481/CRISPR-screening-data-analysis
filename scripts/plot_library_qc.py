@@ -16,7 +16,7 @@ CRISPR 文库质控三图绘制 (per-sample, 带样本名)
 
 用法:
   # 单个样本 (输出文件名与标题都带样本名)
-  python plot_library_qc.py -i all.count.txt -s Day7_Total_1 -o ./qc_pdf
+  python plot_library_qc.py -i all.count.txt -s Day7.5_Total_1 -o ./qc_pdf
 
   # 批量: 自动遍历 readcount 表里所有样本列, 每个样本生成一个 PDF
   python plot_library_qc.py -i all.count.txt --all -o ./qc_pdf
