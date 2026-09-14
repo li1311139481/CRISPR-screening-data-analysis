@@ -25,7 +25,7 @@ CRISPR 文库质控三图绘制 (per-sample, 带样本名)
   python plot_library_qc.py --demo -o ./qc_pdf
 
 依赖: numpy pandas scipy matplotlib
-判定阈值: Skew Ratio < 10 合格 ; AUC < 0.7 合格
+参考阈值: Skew Ratio < 10 ; AUC < 0.7 (脚本只输出数值与图形, 不做合格判定)
 """
 import argparse
 import os
@@ -102,7 +102,6 @@ def fig6_skew(counts, sample):
     ax.annotate(f"90%: {p90:.0f}", xy=(p90, 0.9), xytext=(p90 + max(c) * 0.02, 0.82), fontsize=9)
     ax.set_xlabel("Sequencing depth (reads per sgRNA)")
     ax.set_ylabel("Cumulative fraction of sgRNAs")
-    status = "PASS" if skew < 10 else "FAIL"
     ax.set_title(f"Uniformity slope  |  Skew ratio = {skew:.2f}  |  {sample}")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
@@ -123,7 +122,6 @@ def fig7_auc(counts, sample):
     ax.fill_between(x, cum_ab, alpha=0.15, color="red")
     ax.set_xlabel("Cumulative fraction of sgRNAs (ranked by abundance)")
     ax.set_ylabel("Cumulative fraction of total reads")
-    status = "PASS" if auc < 0.7 else "FAIL"
     ax.set_title(f"sgRNA read-count AUC  |  AUC = {auc:.4f}  |  {sample}")
     ax.legend(loc="upper left", frameon=False, fontsize=9)
     ax.set_xlim(0, 1); ax.set_ylim(0, 1)
@@ -190,19 +188,15 @@ def main():
             # Always regenerate (overwrite) so re-runs are unambiguous.
             counts = load_counts(args.input, s)
             pdf_path, skew, auc = make_pdf(counts, s, args.outdir, keep_png=args.png)
-            flag_s = "PASS" if skew < 10 else "FAIL"
-            flag_a = "PASS" if auc < 0.7 else "FAIL"
-            print(f"  {s:18s} Skew={skew:7.2f} [{flag_s}]  AUC={auc:.4f} [{flag_a}]  -> {os.path.basename(pdf_path)}")
+            print(f"  {s:18s} Skew={skew:7.2f}  AUC={auc:.4f}  -> {os.path.basename(pdf_path)}")
     else:
         if not args.sample:
             ap.error("需要 -s <sample>, 或加 --all 批量, 或加 --demo")
         counts = load_counts(args.input, args.sample)
         pdf_path, skew, auc = make_pdf(counts, args.sample, args.outdir, keep_png=args.png)
-        flag_s = "PASS" if skew < 10 else "FAIL"
-        flag_a = "PASS" if auc < 0.7 else "FAIL"
         print(f"sgRNAs (>0): {(counts > 0).sum()}")
-        print(f"Skew ratio (p90/p10) = {skew:.2f}   {flag_s} (<10)")
-        print(f"AUC (Lorenz)         = {auc:.4f}  {flag_a} (<0.7)")
+        print(f"Skew ratio (p90/p10) = {skew:.2f}")
+        print(f"AUC (Lorenz)         = {auc:.4f}")
         print(f"PDF written: {pdf_path}")
 
 
