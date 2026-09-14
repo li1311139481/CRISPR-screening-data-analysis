@@ -4,6 +4,7 @@
 import argparse
 import os
 import shlex
+import shutil
 import subprocess as sb
 from itertools import permutations
 
@@ -22,7 +23,10 @@ def main() -> None:
     parser.add_argument("-n", "--prefix", required=True, help="Output prefix, e.g. TF")
     parser.add_argument("-p", "--parallel", type=int, required=True, help="Number of parallel MAGeCK jobs")
     parser.add_argument("-m", "--metadata", default=None, help="Path to meta.data.csv (default: DIR/meta.data.csv)")
-    parser.add_argument("--submit", action="store_true", help="Submit run.slurm automatically")
+    parser.add_argument("--submit", action="store_true",
+                        help="Submit run.slurm automatically. If Slurm (sbatch) is not "
+                             "available on this machine, no submission is attempted; a "
+                             "warning with manual run instructions is printed instead.")
     parser.add_argument("--nodelist", default=None, help="Slurm nodelist (e.g. node2), omit if not needed")
     parser.add_argument("--partition", default=None, help="Slurm partition name (omit to use the cluster default)")
     parser.add_argument("--python", default="python",
@@ -127,6 +131,7 @@ def main() -> None:
     # so the one-command end-to-end path still produces library QC and MAGeCKFlute
     # reports in addition to all_samples.count.txt.
     postprocess_line = ""
+    postprocess_cmd = ""
     if args.with_postprocess:
         postprocess_cmd = " ".join([
             q(args.python), q(postprocess_script),
@@ -159,11 +164,34 @@ parallel --jobs {parallel} < {command_file}
     print(f"command script generated at:\n{command_file}\n")
     print(f"Slurm job script generated at:\n{slurm_file}\n")
 
-    if args.submit:
-        print("Submitting Slurm job")
-        sb.run(["sbatch", slurm_file], check=True)
-    else:
+    if not args.submit:
         print("Slurm script generated but not submitted. Add --submit to submit automatically.")
+        return
+
+    sbatch = shutil.which("sbatch")
+    if sbatch is None:
+        # No Slurm on this machine: do not fail, but make it impossible to miss.
+        bar = "=" * 74
+        print(f"\n{bar}")
+        print("WARNING: 'sbatch' not found - this machine has NO Slurm workload manager.")
+        print("         Nothing was submitted. You must run the jobs yourself:")
+        print(bar)
+        print(f"\n  1) Run the {generated} MAGeCK count/test jobs listed in:")
+        print(f"       {command_file}")
+        print(f"\n     With GNU parallel ({parallel} jobs at a time):")
+        print(f"       parallel --jobs {parallel} < {command_file}")
+        print("\n     Without GNU parallel (sequential, slower):")
+        print(f"       bash {command_file}")
+        if postprocess_cmd:
+            print(f"\n  2) After all comparisons finish, run post-processing:")
+            print(f"       {postprocess_cmd}")
+        print(f"\n  Note: {slurm_file} was still written, but it only works on a")
+        print("        cluster that provides Slurm.")
+        print(f"{bar}\n")
+        return
+
+    print("Submitting Slurm job")
+    sb.run([sbatch, slurm_file], check=True)
 
 
 if __name__ == "__main__":

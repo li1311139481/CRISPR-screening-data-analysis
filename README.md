@@ -274,7 +274,7 @@ python scripts/screening_run_all.py \
 | `-m` | Metadata CSV path (default: `DIR/meta.data.csv`) |
 | `-n` | Output prefix for result directories |
 | `-p` | Number of parallel MAGeCK jobs |
-| `--submit` | Automatically submit the Slurm job |
+| `--submit` | Automatically submit the Slurm job (on machines without Slurm, prints a warning plus manual run instructions instead of failing) |
 | `--nodelist` | Slurm nodelist (e.g. node2), omit if not needed |
 | `--partition` | Slurm partition name (omit to use the cluster default) |
 | `--python` | Python executable to embed in generated commands (default `python`, resolved from PATH after `conda activate`) |
@@ -288,6 +288,25 @@ Without `--submit`, only `commands.sh` and `run.slurm` are generated. Submit man
 ```bash
 sbatch run.slurm
 ```
+
+#### Running on a machine without Slurm
+
+`sbatch` is auto-detected. If it is not on `PATH` (workstation, local server, container),
+`--submit` does **not** raise an error — it prints a warning banner and exits successfully,
+telling you exactly what to run by hand:
+
+```bash
+# 1) MAGeCK count/test (GNU parallel, -p jobs at a time)
+parallel --jobs 8 < ${DIR}/commands.sh
+
+# no GNU parallel? run sequentially instead
+bash ${DIR}/commands.sh
+
+# 2) optional: post-processing (only when you used --with-postprocess)
+python scripts/postprocess.py -d ${DIR} -n TF --qc --flute
+```
+
+`run.slurm` is still written in that case, but it is only usable on a Slurm cluster.
 
 By default, `run.slurm` only runs the parallel MAGeCK **count/test** jobs. To also
 auto-generate the merged count table, per-sample library QC, and per-comparison
