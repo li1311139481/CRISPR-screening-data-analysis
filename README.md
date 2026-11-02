@@ -2,11 +2,23 @@
 
 A computational workflow for pooled CRISPR screen sequencing analysis. The workflow extracts sgRNA spacer sequences from FASTQ files, quantifies sgRNA abundance with [MAGeCK](https://sourceforge.net/p/mageck/), performs all pairwise enrichment/depletion analyses, and generates quality-control plots and summary reports.
 
-## Before you start
+## Quality thresholds and read preprocessing
 
-Before running your own analysis, confirm that the sequencing quality of every library meets the reference threshold: the percentage of raw bases with a Phred quality score of at least 30 (Q30) is above 85%. A library below this threshold is not worth carrying through the workflow, and no downstream step can recover it.
+Before running your own analysis, confirm that the sequencing quality of every library meets the reference threshold: the percentage of raw bases with a Phred quality score of at least 30 (Q30) is above 85%. A library below this threshold is not worth carrying through the workflow, and no downstream step can recover it. This check is done outside the workflow, for example with FastQC.
 
-This check is done outside the workflow, for example with FastQC, and the pipeline neither computes nor enforces it.
+The thresholds applied to the reads before `mageck count` are:
+
+| Stage | Threshold | Where |
+|-------|-----------|-------|
+| Raw sequencing | Q30 > 85% of raw bases (reference) | Manual pre-check, not computed by the pipeline |
+| Adapter matching | Maximum error rate of 10% against either flank (`-e 0.1`) | `scripts/run_cutadapt.sh` |
+| Base quality | Phred score below 20 trimmed from the 3′ end (`-q 20`) | `scripts/run_cutadapt.sh` |
+| Flank requirement | Both flanks must be found, otherwise the read is discarded (`--discard-untrimmed`) | `scripts/run_cutadapt.sh` |
+| Spacer length | Spacers shorter than 10 nt after trimming are removed (`--minimum-length 10`) | `scripts/run_cutadapt.sh` |
+
+Read 1 sequences are processed with Cutadapt to extract spacer sequences. The adapter is passed as a linked adapter (`-g`), so both flanking sequences are required and the spacer between them is kept; `-e 0.1` allows a maximum error rate of 10% when matching either flank, `-q 20` trims low-quality bases from the 3′ end of the reads, `--discard-untrimmed` discards reads in which the flanks were not found, and `--minimum-length 10` removes sequences shorter than 10 nucleotides after trimming. This pre-filtering reduces non-informative reads entering downstream analysis. The extracted spacer sequences are then matched to the sgRNA library using MAGeCK.
+
+> **Note:** Library quality *after* counting is reported by `scripts/plot_library_qc.py` (per-sample read-count KDE, skew ratio and Lorenz AUC plots) and by MAGeCKFlute (mapping rate, missed sgRNA ratio and Gini index). These steps produce metrics and plots only; they do not label a sample as passing or failing.
 
 ## Quick start
 
