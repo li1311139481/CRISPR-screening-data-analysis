@@ -2,6 +2,12 @@
 
 A computational workflow for pooled CRISPR screen sequencing analysis. The workflow extracts sgRNA spacer sequences from FASTQ files, quantifies sgRNA abundance with [MAGeCK](https://sourceforge.net/p/mageck/), performs all pairwise enrichment/depletion analyses, and generates quality-control plots and summary reports.
 
+## Before you start
+
+Before running your own analysis, confirm that the sequencing quality of every library meets the reference threshold: the percentage of raw bases with a Phred quality score of at least 30 (Q30) is above 85%. A library below this threshold is not worth carrying through the workflow, and no downstream step can recover it.
+
+This check is done outside the workflow, for example with FastQC, and the pipeline neither computes nor enforces it.
+
 ## Quick start
 
 ```bash
