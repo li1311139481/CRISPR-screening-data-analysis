@@ -1,0 +1,816 @@
+"SYMBOL","ENTREZID","GENENAME","NumOfValidGuide","Log2FC","RRAscore","fdr","neg.rank","pos.rank"
+"Lhx5","16873","LIM homeobox protein 5",4,0.040607,0.24756,1,166,313
+"Smad5","17129","SMAD family member 5",4,0.052555,0.36425,1,196,399
+"Sox4","20677","SRY (sex determining region Y)-box 4",4,0.19884,0.17636,1,215,263
+"Vgll1","170828","vestigial like family member 1",4,0.050868,0.12583,1,227,195
+"Zfp13","22654","zinc finger protein 13",4,0.26495,0.30542,1,229,355
+"Ebf2","13592","early B cell factor 2",4,0.10749,0.14917,1,230,227
+"Gmeb1","56809","glucocorticoid modulatory element binding protein 1",4,0.18998,0.081249,0.914118,234,127
+"Tbx19","83993","T-box 19",4,0.11141,0.46431,1,241,471
+"Spdef","30051","SAM pointed domain containing ets transcription factor",4,0.052105,0.19642,1,246,277
+"Myog","17928","myogenin",4,0.17512,0.13515,1,250,203
+"Atf7","223922","activating transcription factor 7",4,0.0068756,0.18675,1,259,271
+"Nr1i2","18171","nuclear receptor subfamily 1, group I, member 2",4,0.036845,0.29876,1,261,349
+"Ikzf4","22781","IKAROS family zinc finger 4",4,0.11295,0.24381,1,262,310
+"Arx","11878","aristaless related homeobox",4,0.2349,0.075502,0.914118,271,119
+"Creb3l1","26427","cAMP responsive element binding protein 3-like 1",4,0.05959,0.28552,1,273,336
+"Thra","21833","thyroid hormone receptor alpha",4,0.33527,0.071642,0.914118,275,113
+"Tsc22d1","21807","TSC22 domain family, member 1",3,0.070092,0.043665,0.693827,283,90
+"Rhox5","18617","reproductive homeobox 5",4,0.080057,0.2325,1,284,301
+"Pax1","18503","paired box 1",4,0.06517,0.65362,1,289,570
+"Lbx1","16814","ladybird homeobox 1",4,0.085994,0.29778,1,301,348
+"Stat5a","20850","signal transducer and activator of transcription 5A",4,0.24132,0.024271,0.583663,308,70
+"Atf6b","12915","activating transcription factor 6 beta",4,0.11379,0.22482,1,310,297
+"Esr1","13982","estrogen receptor 1 (alpha)",4,0.26534,0.077017,0.914118,313,120
+"Epas1","13819","endothelial PAS domain protein 1",4,0.26604,0.11446,1,314,177
+"Rhox11","194738","reproductive homeobox 11",4,0.17327,0.15452,1,320,238
+"Trp73","22062","transformation related protein 73",4,0.27345,0.12002,1,322,186
+"Tfap2a","21418","transcription factor AP-2, alpha",4,0.21747,0.017018,0.45521,326,56
+"Lrrfip1","16978","leucine rich repeat (in FLII) interacting protein 1",4,0.076798,0.24168,1,328,307
+"Zmym6","100177","zinc finger, MYM-type 6",4,0.29295,0.046616,0.693827,329,93
+"Pou5f2","75507","POU domain class 5, transcription factor 2",4,0.060613,0.40262,1,333,434
+"Zfp715","69930","zinc finger protein 715",4,0.032988,0.17949,1,336,265
+"Hdx","245596","highly divergent homeobox",4,0.13825,0.27231,1,339,327
+"Msx1","17701","msh homeobox 1",4,0.032191,0.34398,1,341,385
+"Hsf4","26386","heat shock transcription factor 4",4,0.20645,0.13569,1,342,204
+"Esrra","26379","estrogen related receptor, alpha",4,0.038295,0.094903,0.914118,344,146
+"Tfdp1","21781","transcription factor Dp 1",4,0.058126,0.34448,1,345,386
+"Ovol1","18426","ovo like zinc finger 1",4,0.27871,0.041543,0.693827,346,87
+"Dlx5","13395","distal-less homeobox 5",4,0.33678,0.089205,0.914118,348,137
+"Etv4","18612","ets variant 4",4,0.078815,0.21669,1,349,292
+"Mycn","18109","v-myc avian myelocytomatosis viral related oncogene, neuroblastoma derived",4,0.13048,0.33657,1,350,380
+"Sox2","20674","SRY (sex determining region Y)-box 2",4,0.048213,0.098182,0.914118,351,153
+"Csrnp3","77771","cysteine-serine-rich nuclear protein 3",4,0.10476,0.37583,1,352,414
+"E2f6","50496","E2F transcription factor 6",4,0.12584,0.32373,1,356,371
+"Hnf4g","30942","hepatocyte nuclear factor 4, gamma",4,0.52511,0.028537,0.643631,358,74
+"Hoxd9","15438","homeobox D9",4,0.052965,0.15302,1,361,237
+"Lhx4","16872","LIM homeobox protein 4",4,0.20214,0.1104,1,362,173
+"Cebpb","12608","CCAAT/enhancer binding protein beta",4,0.065291,0.58792,1,363,543
+"Eno1b","433182","enolase 1B, retrotransposed",4,0.11301,0.15199,1,364,234
+"Tbx18","76365","T-box18",4,0.19304,0.24615,1,367,312
+"Zfp263","74120","zinc finger protein 263",4,0.14026,0.14829,1,369,226
+"Eaf2","106389","ELL associated factor 2",4,0.25545,0.018442,0.45521,370,60
+"Elk4","13714","ELK4, member of ETS oncogene family",4,0.03517,0.51109,1,373,510
+"Zbtb37","240869","zinc finger and BTB domain containing 37",4,0.05927,0.72464,1,375,596
+"Tfap2d","226896","transcription factor AP-2, delta",4,0.00087601,0.6172,1,376,553
+"Pou3f1","18991","POU domain, class 3, transcription factor 1",4,0.10024,0.1649,1,377,247
+"Pknox1","18771","Pbx/knotted 1 homeobox",4,0.1678,0.038933,0.693827,382,82
+"Foxc2","14234","forkhead box C2",4,0.0046395,0.37384,1,383,410
+"Pou3f3","18993","POU domain, class 3, transcription factor 3",4,0.011125,0.43282,1,384,457
+"Ddit3","13198","DNA-damage inducible transcript 3",4,0.093247,0.16801,1,385,251
+"Osr2","107587","odd-skipped related 2",4,0.10869,0.36536,1,387,401
+"Aire","11634","autoimmune regulator",4,0.11371,0.42933,1,390,452
+"Eno1","13806","enolase 1, alpha non-neuron",4,0.4202,0.019247,0.45521,394,62
+"Maff","17133","v-maf musculoaponeurotic fibrosarcoma oncogene family, protein F (avian)",4,0.067233,0.33063,1,397,376
+"Dlx3","13393","distal-less homeobox 3",4,0.050559,0.67204,1,399,578
+"Tbx4","21387","T-box 4",4,0.083881,0.70307,1,401,589
+"E2f1","13555","E2F transcription factor 1",4,0.54681,0.02804,0.643631,403,73
+"Pax5","18507","paired box 5",4,0.19375,0.061017,0.789978,406,106
+"Pou2f3","18988","POU domain, class 2, transcription factor 3",4,0.11612,0.43556,1,407,459
+"Npas4","225872","neuronal PAS domain protein 4",4,0.3576,0.097563,0.914118,409,151
+"Fev","260298","FEV transcription factor, ETS family member",4,0.34137,0.1084,1,412,170
+"Gata2","14461","GATA binding protein 2",4,0.081063,0.27748,1,416,332
+"Zfp639","67778","zinc finger protein 639",4,0.19654,0.16658,1,418,250
+"Zkscan3","72739","zinc finger with KRAB and SCAN domains 3",4,0.16878,0.33491,1,419,378
+"Nfe2l2","18024","nuclear factor, erythroid derived 2, like 2",4,0.63927,0.00088426,0.039879,420,16
+"Foxs1","14239","forkhead box S1",4,0.39219,0.057863,0.720802,421,103
+"Tbx15","21384","T-box 15",4,0.094892,0.23434,1,422,303
+"Msx3","17703","msh homeobox 3",4,0.041752,0.30022,1,423,352
+"Ndn","17984","necdin, MAGE family member",4,0.2934,0.10037,0.922754,424,159
+"Rxra","20181","retinoid X receptor alpha",4,0.21375,0.16958,1,426,253
+"Glis2","83396","GLIS family zinc finger 2",4,0.098452,0.13458,1,427,202
+"Nkx3-2","12020","NK3 homeobox 2",4,0.1831,0.14249,1,429,217
+"Pax2","18504","paired box 2",4,0.11606,0.1753,1,430,262
+"Arid3b","56380","AT-rich interaction domain 3B",4,0.30962,0.11664,1,431,180
+"Pax6","18508","paired box 6",4,0.22415,0.25079,1,432,316
+"Jdp2","81703","Jun dimerization protein 2",4,0.258,0.083514,0.914118,433,130
+"Gli1","14632","GLI-Kruppel family member GLI1",4,0.1884,0.17081,1,434,255
+"Zfhx3","11906","zinc finger homeobox 3",4,0.23651,0.048028,0.693827,437,95
+"Tox2","269389","TOX high mobility group box family member 2",4,0.46122,0.00076737,0.032673,438,15
+"Cdx2","12591","caudal type homeobox 2",4,0.070289,0.39493,1,441,425
+"Plagl1","22634","pleiomorphic adenoma gene-like 1",4,0.20723,0.10219,0.927607,442,162
+"Msc","17681","musculin",4,0.037732,0.23065,1,443,300
+"Lhx3","16871","LIM homeobox protein 3",4,0.044511,0.32225,1,445,368
+"Sp2","78912","Sp2 transcription factor",4,0.40058,0.01786,0.45521,446,59
+"Mef2c","17260","myocyte enhancer factor 2C",4,0.081253,0.39582,1,447,426
+"Tbx20","57246","T-box 20",4,0.48901,0.016521,0.45521,448,55
+"Mecp2","17257","methyl CpG binding protein 2",4,0.019873,0.50031,1,449,495
+"Mxd4","17122","Max dimerization protein 4",4,0.25458,0.083764,0.914118,452,131
+"Zmym5","219105","zinc finger, MYM-type 5",4,0.31112,0.035135,0.689171,453,80
+"Isl1","16392","ISL1 transcription factor, LIM/homeodomain",4,0.14389,0.21949,1,454,294
+"Nfxl1","100978","nuclear transcription factor, X-box binding-like 1",4,0.39177,0.019275,0.45521,455,63
+"Klf13","50794","Kruppel-like transcription factor 13",4,0.46261,0.021253,0.522391,457,65
+"Sox12","20667","SRY (sex determining region Y)-box 12",4,0.22296,0.15966,1,458,241
+"Pax4","18506","paired box 4",4,0.39703,0.12481,1,459,193
+"Nkx2-1","21869","NK2 homeobox 1",4,0.080529,0.32323,1,460,369
+"Elf2","69257","E74-like factor 2",4,0.084627,0.35889,1,461,394
+"Foxc1","17300","forkhead box C1",4,0.18801,0.16088,1,464,244
+"Bmpr1a","12166","bone morphogenetic protein receptor, type 1A",4,0.49898,0.032791,0.676885,465,78
+"Ccdc160","434778","coiled-coil domain containing 160",4,0.25834,0.072771,0.914118,466,117
+"Mafk","17135","v-maf musculoaponeurotic fibrosarcoma oncogene family, protein K (avian)",4,0.04873,0.38561,1,467,420
+"Hoxc13","15422","homeobox C13",4,0.021281,0.6117,1,469,552
+"Zfp42","22702","zinc finger protein 42",4,0.34127,0.072728,0.914118,470,116
+"Hmga2","15364","high mobility group AT-hook 2",4,0.021378,0.79736,1,471,629
+"Ifi214","545384","interferon activated gene 214",4,0.22933,0.34151,1,473,383
+"Hmbox1","219150","homeobox containing 1",4,0.05063,0.49243,1,474,489
+"Spi1","20375","Spi-1 proto-oncogene",4,0.29011,0.12581,1,476,194
+"Barhl1","54422","BarH like homeobox 1",4,0.023462,0.41833,1,478,445
+"T","20997","brachyury, T-box transcription factor T",4,0.080157,0.37302,1,479,408
+"Ifi206","102639543","interferon activated gene 206",4,0.16819,0.31194,1,480,361
+"Tfap2c","21420","transcription factor AP-2, gamma",4,0.058065,0.51354,1,482,514
+"Pou4f1","18996","POU domain, class 4, transcription factor 1",4,0.0654,0.43189,1,483,456
+"Atf1","11908","activating transcription factor 1",4,0.25793,0.10323,0.929291,484,163
+"Barx1","12022","BarH-like homeobox 1",4,0.57226,0.059639,0.746488,485,105
+"Nkx2-2","18088","NK2 homeobox 2",4,0.023948,0.5027,1,486,497
+"Cc2d1b","319965","coiled-coil and C2 domain containing 1B",4,0.25664,0.30949,1,489,359
+"Ifi204","15951","interferon activated gene 204",4,0.17808,0.16071,1,490,243
+"Foxi2","270004","forkhead box I2",4,0.71918,0.0092068,0.262859,491,41
+"Sall1","58198","spalt like transcription factor 1",4,0.42479,0.08336,0.914118,493,129
+"Hes6","55927","hairy and enhancer of split 6",4,0.22483,0.12009,1,494,187
+"Pax9","18511","paired box 9",4,0.12288,0.35988,1,495,396
+"Sohlh1","227631","spermatogenesis and oogenesis specific basic helix-loop-helix 1",4,0.10248,0.42375,1,496,447
+"Insm1","53626","insulinoma-associated 1",4,0.43598,0.042632,0.693827,497,88
+"Grhl2","252973","grainyhead like transcription factor 2",4,0.17164,0.092275,0.914118,498,141
+"Snai3","30927","snail family zinc finger 3",4,0.058834,0.5533,1,499,531
+"Hoxb1","15407","homeobox B1",4,0.33264,0.078337,0.914118,500,123
+"Cebpg","12611","CCAAT/enhancer binding protein gamma",4,0.031495,0.65968,1,501,573
+"Foxn1","15218","forkhead box N1",4,0.32854,0.19778,1,502,280
+"Ascl2","17173","achaete-scute family bHLH transcription factor 2",4,0.22998,0.071363,0.914118,503,112
+"Mkx","210719","mohawk homeobox",4,0.079847,0.33458,1,504,377
+"Hey1","15213","hairy/enhancer-of-split related with YRPW motif 1",4,0.19297,0.23802,1,505,305
+"Rorc","19885","RAR-related orphan receptor gamma",4,0.16578,0.37223,1,506,406
+"Bhlhe22","59058","basic helix-loop-helix family, member e22",4,0.092319,0.20309,1,507,286
+"Tfeb","21425","transcription factor EB",4,0.057554,0.35143,1,508,393
+"Myef2","17876","myelin basic protein expression factor 2, repressor",4,0.19509,0.18275,1,509,269
+"Hoxb13","15408","homeobox B13",4,0.37232,0.10675,0.987316,510,169
+"Hey2","15214","hairy/enhancer-of-split related with YRPW motif 2",4,0.19497,0.2288,1,511,299
+"Dmrt1","50796","doublesex and mab-3 related transcription factor 1",4,0.14248,0.47018,1,512,476
+"Esr2","13983","estrogen receptor 2 (beta)",4,0.19669,0.14917,1,513,228
+"Parp1","11545","poly (ADP-ribose) polymerase family, member 1",4,0.23089,0.052399,0.699554,514,99
+"Scx","20289","scleraxis scleraxis bHLH transcription factor",4,0.090971,0.39232,1,515,423
+"Foxp2","114142","forkhead box P2",3,0.019668,0.39883,1,516,429
+"Sall2","50524","spalt like transcription factor 2",4,0.10952,0.4468,1,517,465
+"Cdx4","12592","caudal type homeobox 4",4,0.076654,0.33903,1,518,382
+"Six5","20475","sine oculis-related homeobox 5",4,0.088269,0.40482,1,519,436
+"Foxd3","15221","forkhead box D3",4,0.066842,0.4458,1,521,464
+"Vdr","22337","vitamin D (1,25-dihydroxyvitamin D3) receptor",4,0.13359,0.43932,1,522,461
+"Zfp367","238673","zinc finger protein 367",4,0.11584,0.36486,1,523,400
+"Ets1","23871","E26 avian leukemia oncogene 1, 5' domain",4,0.18649,0.14567,1,524,222
+"Dmrt2","226049","doublesex and mab-3 related transcription factor 2",4,0.26703,0.0074675,0.229627,525,39
+"Fli1","14247","Friend leukemia integration 1",4,0.038552,0.32323,1,526,370
+"Ifi211","381308","interferon activated gene 211",4,0.031845,0.50374,1,527,499
+"Creb3l3","208677","cAMP responsive element binding protein 3-like 3",4,0.050689,0.67156,1,529,577
+"Nr2e3","23958","nuclear receptor subfamily 2, group E, member 3",4,0.10112,0.34994,1,531,392
+"Nfe2l3","18025","nuclear factor, erythroid derived 2, like 3",4,0.28804,0.082305,0.914118,532,128
+"Mafg","17134","v-maf musculoaponeurotic fibrosarcoma oncogene family, protein G (avian)",4,0.27905,0.085692,0.914118,534,132
+"Zfp536","243937","zinc finger protein 536",4,0.016424,0.60333,1,535,548
+"Gbx1","231044","gastrulation brain homeobox 1",4,0.21042,0.19299,1,536,275
+"Nr1d2","353187","nuclear receptor subfamily 1, group D, member 2",4,0.28177,0.093653,0.914118,537,144
+"Isl2","104360","insulin related protein 2 (islet 2)",4,0.14003,0.14393,1,538,219
+"Klf15","66277","Kruppel-like transcription factor 15",4,0.10027,0.37461,1,539,411
+"Bsx","244813","brain specific homeobox",4,0.087413,0.26457,1,540,325
+"Nfib","18028","nuclear factor I/B",4,0.25108,0.15992,1,541,242
+"Stat1","20846","signal transducer and activator of transcription 1",4,0.18073,0.27125,1,542,326
+"Sp8","320145","trans-acting transcription factor 8",4,0.37231,0.06209,0.802397,543,107
+"Sry","21674","sex determining region of Chr Y",4,0.32347,0.12073,1,544,188
+"Gata6","14465","GATA binding protein 6",4,0.16113,0.18047,1,545,266
+"Lmo2","16909","LIM domain only 2",4,0.059122,0.08862,0.914118,546,135
+"Mecom","14013","MDS1 and EVI1 complex locus",4,0.062777,0.43033,1,548,453
+"Hes5","15208","hes family bHLH transcription factor 5",4,0.12688,0.24568,1,549,311
+"Ar","11835","androgen receptor",4,0.12765,0.36345,1,551,398
+"Usf2","22282","upstream transcription factor 2",4,0.21159,0.13154,1,552,198
+"Bcl11a","14025","BCL11 transcription factor A",4,0.36018,0.081233,0.914118,553,126
+"Cdx1","12590","caudal type homeobox 1",4,0.21314,0.4478,1,554,466
+"Nkx3-1","18095","NK3 homeobox 1",4,0.21747,0.11768,1,555,181
+"Tbx1","21380","T-box 1",4,0.10073,0.30799,1,560,356
+"Ddn","13199","dendrin",4,0.68551,0.031693,0.675003,563,77
+"Hoxa7","15404","homeobox A7",4,0.33074,0.095038,0.914118,564,147
+"Clock","12753","clock circadian regulator",4,0.093149,0.28726,1,565,337
+"Trp53","22059","transformation related protein 53",4,0.11491,0.51328,1,566,513
+"Pax3","18505","paired box 3",4,0.17909,0.13798,1,567,209
+"Dlx1","13390","distal-less homeobox 1",4,0.20109,0.1423,1,568,216
+"Zbtb14","22666","zinc finger and BTB domain containing 14",4,0.070631,0.56788,1,569,536
+"Zbtb5","230119","zinc finger and BTB domain containing 5",4,0.22533,0.47689,1,570,481
+"Sohlh2","74434","spermatogenesis and oogenesis specific basic helix-loop-helix 2",4,0.32939,0.097795,0.914118,572,152
+"Sarnp","66118","SAP domain containing ribonucleoprotein",4,0.42978,0.0057099,0.189906,573,36
+"Cebpd","12609","CCAAT/enhancer binding protein delta",4,0.32911,0.10011,0.914118,574,158
+"Maz","17188","MYC-associated zinc finger protein (purine-binding transcription factor)",4,0.12239,0.34547,1,575,388
+"Zfp239","22685","zinc finger protein 239",4,0.30344,0.14976,1,576,230
+"Msgn1","56184","mesogenin 1",4,0.12324,0.19686,1,577,278
+"Klf11","194655","Kruppel-like transcription factor 11",4,0.31864,0.13964,1,578,211
+"Meis2","17536","Meis homeobox 2",4,0.096083,0.5371,1,579,526
+"Ebf3","13593","early B cell factor 3",4,0.33525,0.24351,1,580,309
+"Atf6","226641","activating transcription factor 6",4,0.03256,0.61003,1,582,551
+"Akna","100182","AT-hook transcription factor",4,0.23648,0.33755,1,583,381
+"Hoxb2","103889","homeobox B2",4,0.14744,0.13625,1,584,205
+"Stat6","20852","signal transducer and activator of transcription 6",4,0.41239,0.077971,0.914118,585,121
+"Erf","13875","Ets2 repressor factor",4,0.13102,0.30168,1,587,353
+"Tbpl1","237336","TATA box binding protein-like 1",4,0.34954,0.052876,0.699554,588,100
+"Hes7","84653","hes family bHLH transcription factor 7",4,0.096207,0.42894,1,589,451
+"Hoxd10","15430","homeobox D10",4,0.1886,0.50816,1,590,507
+"Irx2","16372","Iroquois homeobox 2",4,0.22343,0.27604,1,591,331
+"Nkx2-9","18094","NK2 homeobox 9",4,0.34978,0.024147,0.583663,592,69
+"Nkx2-6","18092","NK2 homeobox 6",4,0.30595,0.089884,0.914118,593,139
+"Zbtb7b","22724","zinc finger and BTB domain containing 7B",4,0.2081,0.21569,1,594,291
+"Tcfl5","277353","transcription factor-like 5 (basic helix-loop-helix)",4,0.37269,0.031331,0.675003,595,76
+"Zfp668","244219","zinc finger protein 668",4,0.25361,0.12106,1,596,189
+"Foxa1","15375","forkhead box A1",4,0.10329,0.46643,1,597,474
+"Nfe2l1","18023","nuclear factor, erythroid derived 2,-like 1",4,0.22576,0.41401,1,598,441
+"Prrxl1",NA,NA,4,0.043861,0.55453,1,599,532
+"Lbx2","16815","ladybird homeobox 2",4,0.19716,0.11007,1,600,172
+"Tox","252838","thymocyte selection-associated high mobility group box",3,0.29132,0.096471,0.914118,601,149
+"Pbx2","18515","pre B cell leukemia homeobox 2",4,0.23036,0.10639,0.987316,602,167
+"Nobox","18291","NOBOX oogenesis homeobox",4,0.18872,0.22758,1,604,298
+"Tfcp2","21422","transcription factor CP2",4,0.20795,0.1699,1,605,254
+"Npas3","27386","neuronal PAS domain protein 3",4,0.17706,0.29681,1,606,347
+"Hoxb3","15410","homeobox B3",4,0.099065,0.35943,1,607,395
+"Tfdp2","211586","transcription factor Dp 2",4,0.18342,0.19775,1,608,279
+"Btg2","12227","BTG anti-proliferation factor 2",4,0.06584,0.49686,1,610,492
+"Tbx6","21389","T-box 6",4,0.040569,0.50571,1,612,502
+"Klf7","93691","Kruppel-like transcription factor 7 (ubiquitous)",4,0.23046,0.29196,1,613,343
+"Tcf15","21407","transcription factor 15",4,0.34644,0.1093,1,614,171
+"Irf6","54139","interferon regulatory factor 6",4,0.07915,0.4448,1,615,463
+"Ppard","19015","peroxisome proliferator activator receptor delta",4,0.21873,0.21199,1,616,290
+"Meis1","17268","Meis homeobox 1",4,0.14139,0.32422,1,617,372
+"Nr1h3","22259","nuclear receptor subfamily 1, group H, member 3",4,0.21072,0.22299,1,618,296
+"Carf","241066","calcium response factor",4,0.12813,0.39082,1,619,422
+"Tfe3","209446","transcription factor E3",4,0.29594,0.078132,0.914118,620,122
+"Stat4","20849","signal transducer and activator of transcription 4",4,0.45759,0.013386,0.399049,621,51
+"Tal1","21349","T cell acute lymphocytic leukemia 1",4,0.28609,0.08819,0.914118,622,134
+"Id1","15901","inhibitor of DNA binding 1, HLH protein",4,0.057998,0.71729,1,623,594
+"Foxa3","15377","forkhead box A3",4,0.14106,0.099431,0.914118,624,156
+"Rarg","19411","retinoic acid receptor, gamma",4,0.19978,0.092302,0.914118,625,142
+"Zfp692","103836","zinc finger protein 692",4,0.13142,0.11869,1,626,183
+"Nfx1","74164","nuclear transcription factor, X-box binding 1",4,0.095506,0.24988,1,627,315
+"Hand2","15111","heart and neural crest derivatives expressed 2",4,0.057544,0.87422,1,628,678
+"Xbp1","22433","X-box binding protein 1",4,0.29675,0.1182,1,629,182
+"Elf3","13710","E74-like factor 3",4,0.027251,0.59881,1,630,547
+"Prkn","50873","parkin RBR E3 ubiquitin protein ligase",4,0.17037,0.17084,1,631,256
+"Hoxd8","15437","homeobox D8",4,0.038555,0.82957,1,632,651
+"Tle4","21888","transducin-like enhancer of split 4",4,0.061734,0.41633,1,633,443
+"Smad3","17127","SMAD family member 3",4,0.081596,0.5172,1,634,519
+"Nkrf","77286","NF-kappaB repressing factor",4,0.24726,0.12389,1,636,192
+"Hoxd4","15436","homeobox D4",4,0.15383,0.45008,1,637,467
+"Rxrb","20182","retinoid X receptor beta",4,0.41911,0.053479,0.703509,638,101
+"Hoxa1","15394","homeobox A1",4,0.13058,0.3754,1,639,413
+"Aebp1","11568","AE binding protein 1",4,0.20492,0.074504,0.914118,640,118
+"Mafb","16658","MAF bZIP transcription factor B",4,0.4066,0.067174,0.819738,641,109
+"Zscan21","22697","zinc finger and SCAN domain containing 21",4,0.18295,0.15693,1,642,240
+"Hand1","15110","heart and neural crest derivatives expressed 1",4,0.16345,0.34696,1,643,390
+"Nr2f6","13864","nuclear receptor subfamily 2, group F, member 6",4,0.029342,0.43115,1,644,454
+"Tlx1","21908","T cell leukemia, homeobox 1",4,0.11744,0.309,1,645,358
+"Cux2","13048","cut-like homeobox 2",4,0.10471,0.71423,1,646,592
+"Rara","19401","retinoic acid receptor, alpha",4,0.25544,0.098495,0.914118,647,154
+"Neurod6","11922","neurogenic differentiation 6",4,0.12684,0.36985,1,648,404
+"Tcf7l2","21416","transcription factor 7 like 2, T cell specific, HMG box",4,0.37702,0.10516,0.929291,649,166
+"Pparg","19016","peroxisome proliferator activated receptor gamma",4,0.13921,0.40032,1,650,431
+"Lhx2","16870","LIM homeobox protein 2",4,0.61373,0.013995,0.404726,651,53
+"Insm2","56856","insulinoma-associated 2",4,0.3441,0.12317,1,652,191
+"Ahr","11622","aryl-hydrocarbon receptor",4,0.21668,0.11511,1,653,178
+"Hdgf","15191","heparin binding growth factor",4,0.18796,0.14596,1,654,224
+"Meox2","17286","mesenchyme homeobox 2",4,0.19508,0.16532,1,655,248
+"Rorb","225998","RAR-related orphan receptor beta",4,0.3214,0.03936,0.693827,656,83
+"Etv1","14009","ets variant 1",4,0.33031,0.42833,1,657,450
+"E2f8","108961","E2F transcription factor 8",4,0.22001,0.14947,1,658,229
+"Sox9","20682","SRY (sex determining region Y)-box 9",4,0.17,0.47342,1,659,477
+"Hoxd3","15434","homeobox D3",4,0.86266,0.0037597,0.134005,660,26
+"Nr4a3","18124","nuclear receptor subfamily 4, group A, member 3",4,0.59286,0.00025009,0.008416,661,9
+"Nr1h4","20186","nuclear receptor subfamily 1, group H, member 4",4,0.22988,0.36825,1,662,402
+"Cebpa","12606","CCAAT/enhancer binding protein alpha",4,0.21554,0.20253,1,663,285
+"Esrrb","26380","estrogen related receptor, beta",4,0.12356,0.57563,1,664,539
+"Sp4","20688","trans-acting transcription factor 4",4,0.15347,0.52572,1,665,523
+"Hoxa4","15401","homeobox A4",4,0.69735,0.040698,0.693827,666,85
+"Rbpj","19664","recombination signal binding protein for immunoglobulin kappa J region",4,1.031,4.2718e-05,0.003536,667,7
+"Myf6","17878","myogenic factor 6",4,0.33616,0.043957,0.693827,668,91
+"Ybx3","56449","Y box protein 3",4,0.050638,0.85303,1,669,665
+"Hoxc4","15423","homeobox C4",4,0.30505,0.145,1,670,221
+"Mndal","100040462","myeloid nuclear differentiation antigen like",4,0.10901,0.51065,1,671,509
+"Rhox10","434769","reproductive homeobox 10",4,0.2125,0.14049,1,672,213
+"Isx","71597","intestine specific homeobox",4,0.018726,0.88189,1,673,687
+"Mxd3","17121","Max dimerization protein 3",4,0.1891,0.6869,1,674,582
+"Foxa2","15376","forkhead box A2",4,0.27799,0.10494,0.929291,675,165
+"Pdx1","18609","pancreatic and duodenal homeobox 1",4,0.01885,0.8004,1,676,631
+"Klf9","16601","Kruppel-like transcription factor 9",4,0.34951,0.12851,1,677,197
+"Stat5b","20851","signal transducer and activator of transcription 5B",4,0.6874,0.0043522,0.135809,678,30
+"Foxp3","20371","forkhead box P3",4,0.43014,0.16287,1,679,246
+"Elf5","13711","E74-like factor 5",4,0.47792,0.011123,0.319092,680,45
+"Arid3c","550619","AT-rich interaction domain 3C",4,0.12932,0.37084,1,681,405
+"Gcm1","14531","glial cells missing homolog 1",4,0.34259,0.18144,1,682,267
+"Hbp1","73389","high mobility group box transcription factor 1",4,0.10677,0.5856,1,683,542
+"Arntl2",NA,NA,4,0.19731,0.23342,1,684,302
+"Lhx9","16876","LIM homeobox protein 9",4,0.087893,0.87159,1,685,676
+"Hsf2","15500","heat shock factor 2",4,0.29735,0.069632,0.914118,686,111
+"Hmga1","15361","high mobility group AT-hook 1",4,0.11394,0.39878,1,687,428
+"Mzf1","109889","myeloid zinc finger 1",4,0.078218,0.52086,1,688,521
+"Fosb","14282","FBJ osteosarcoma oncogene B",4,0.2171,0.25367,1,689,320
+"Plscr1","22038","phospholipid scramblase 1",4,0.25416,0.33656,1,690,379
+"Zbtb16","235320","zinc finger and BTB domain containing 16",4,0.3241,0.13681,1,691,206
+"Srebf1","20787","sterol regulatory element binding transcription factor 1",4,0.29475,0.099073,0.914118,692,155
+"Hesx1","15209","homeobox gene expressed in ES cells",4,0.41843,0.042949,0.693827,693,89
+"Ncoa3","17979","nuclear receptor coactivator 3",4,0.45358,0.01265,0.367246,695,47
+"Ifi208","100033459","interferon activated gene 208",4,0.63018,0.0048326,0.173731,696,32
+"Nr0b1","11614","nuclear receptor subfamily 0, group B, member 1",4,0.45634,0.071946,0.914118,697,114
+"Id2","15902","inhibitor of DNA binding 2",4,0.34062,0.17787,1,698,264
+"Hsf1","15499","heat shock factor 1",4,0.17968,0.37619,1,699,415
+"Myocd","214384","myocardin",4,0.19931,0.1448,1,700,220
+"Olig2","50913","oligodendrocyte transcription factor 2",4,0.30184,0.19377,1,701,276
+"Etv2","14008","ets variant 2",4,0.10896,0.42733,1,702,449
+"Sox6","20679","SRY (sex determining region Y)-box 6",4,0.19918,0.43922,1,703,460
+"Creb1","12912","cAMP responsive element binding protein 1",4,0.41711,0.034697,0.689171,704,79
+"E2f3","13557","E2F transcription factor 3",4,0.14803,0.7272,1,705,598
+"Nr4a2","18227","nuclear receptor subfamily 4, group A, member 2",4,0.47585,0.046982,0.693827,706,94
+"Mitf","17342","melanogenesis associated transcription factor",4,0.30371,0.11435,1,707,176
+"Tlx2","21909","T cell leukemia, homeobox 2",4,0.07793,0.88391,1,708,690
+"Mesp1","17292","mesoderm posterior 1",4,0.45167,0.095947,0.914118,709,148
+"Ascl3","56787","achaete-scute family bHLH transcription factor 3",4,0.46917,0.071954,0.914118,710,115
+"Klf12","16597","Kruppel-like transcription factor 12",4,0.25627,0.30969,1,711,360
+"Tcf21","21412","transcription factor 21",4,0.33236,0.14593,1,712,223
+"Creb5","231991","cAMP responsive element binding protein 5",4,0.44843,0.10427,0.929291,713,164
+"Zfp750","319530","zinc finger protein 750",4,0.13023,0.14077,1,714,215
+"Nfyc","18046","nuclear transcription factor-Y gamma",4,0.15763,0.36337,1,715,397
+"Kcnip3","56461","Kv channel interacting protein 3, calsenilin",4,0.26636,0.081214,0.914118,716,125
+"Six4","20474","sine oculis-related homeobox 4",4,0.26636,0.30884,1,717,357
+"Ikzf2","22779","IKAROS family zinc finger 2",4,0.35981,0.2013,1,718,283
+"Tox4","268741","TOX high mobility group box family member 4",4,0.46432,0.044394,0.693827,719,92
+"Mxd1","17119","MAX dimerization protein 1",4,0.37693,0.030065,0.6633,720,75
+"Foxo3","56484","forkhead box O3",4,0.42876,0.16155,1,721,245
+"Irf5","27056","interferon regulatory factor 5",4,0.22349,0.13358,1,722,199
+"Tbx10","109575","T-box 10",4,0.32381,0.091766,0.914118,723,140
+"Sox17","20671","SRY (sex determining region Y)-box 17",4,0.47616,0.078615,0.914118,724,124
+"Relb","19698","avian reticuloendotheliosis viral (v-rel) oncogene related B",4,0.16304,0.15183,1,725,233
+"Tfec","21426","transcription factor EC",4,0.23208,0.34795,1,726,391
+"Thrb","21834","thyroid hormone receptor beta",4,0.20711,0.32717,1,727,374
+"Ier2","15936","immediate early response 2",4,0.43548,0.040559,0.693827,728,84
+"Nr6a1","14536","nuclear receptor subfamily 6, group A, member 1",4,0.21902,0.47514,1,729,478
+"E2f7","52679","E2F transcription factor 7",4,0.13075,0.87705,1,730,682
+"Hnf1b","21410","HNF1 homeobox B",4,0.21278,0.48947,1,731,487
+"Onecut2","225631","one cut domain, family member 2",4,0.36305,0.088962,0.914118,732,136
+"Vrtn","432677","vertebrae development associated",4,0.20986,0.3193,1,733,364
+"Sox3","20675","SRY (sex determining region Y)-box 3",4,0.24864,0.37234,1,734,407
+"Zfp654","72020","zinc finger protein 654",4,0.51911,0.0039833,0.134005,735,28
+"Bhlhe41","79362","basic helix-loop-helix family, member e41",4,0.26411,0.50204,1,736,496
+"Pou4f3","18998","POU domain, class 4, transcription factor 3",4,0.29693,0.41702,1,737,444
+"Hhex","15242","hematopoietically expressed homeobox",4,0.52665,0.086519,0.914118,738,133
+"Irx1","16371","Iroquois homeobox 1",4,0.46828,0.057011,0.720802,739,102
+"Sox15","20670","SRY (sex determining region Y)-box 15",4,0.91666,0.0068178,0.202579,740,37
+"Batf3","381319","basic leucine zipper transcription factor, ATF-like 3",4,0.48249,0.0022207,0.111033,741,21
+"Mxi1","17859","MAX interactor 1, dimerization protein",4,0.23687,0.39932,1,742,430
+"Nfatc2","18019","nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 2",4,0.49927,0.0082846,0.243688,743,40
+"Alx1","216285","ALX homeobox 1",4,0.47608,0.10172,0.927607,744,160
+"Sox10","20665","SRY (sex determining region Y)-box 10",4,0.19238,0.25085,1,745,317
+"Zbtb45","232879","zinc finger and BTB domain containing 45",4,0.29302,0.14683,1,746,225
+"Stat3","20848","signal transducer and activator of transcription 3",4,0.48812,0.0097067,0.27504,747,42
+"Tbx3","21386","T-box 3",4,0.22814,0.42433,1,748,448
+"Pou6f1","19009","POU domain, class 6, transcription factor 1",4,0.26491,0.17306,1,749,260
+"Runx2","12393","runt related transcription factor 2",4,0.426,0.005394,0.189906,750,34
+"Hoxa6","15403","homeobox A6",4,0.44985,0.021346,0.525728,751,66
+"Lyl1","17095","lymphoblastomic leukemia 1",4,0.38224,0.15512,1,752,239
+"Foxb1","64290","forkhead box B1",4,0.43129,0.050967,0.693827,753,98
+"Klf17","75753","Kruppel-like transcription factor 17",4,0.26945,0.37533,1,754,412
+"Zfp467","68910","zinc finger protein 467",4,0.46944,0.050697,0.693827,755,97
+"Foxi1","14233","forkhead box I1",4,0.69464,0.02537,0.614349,756,71
+"Gbx2","14472","gastrulation brain homeobox 2",4,0.31502,0.27316,1,757,328
+"Fezf2","54713","Fez family zinc finger 2",4,0.32473,0.17243,1,758,258
+"Onecut1","15379","one cut domain, family member 1",4,0.33526,0.15244,1,759,235
+"Meox1","17285","mesenchyme homeobox 1",4,0.29551,0.10662,0.987316,760,168
+"Barhl2","104382","BarH like homeobox 2",4,0.18592,0.39732,1,761,427
+"Bhlha15","17341","basic helix-loop-helix family, member a15",4,0.58152,0.017091,0.45521,762,57
+"Ifi209","236312","interferon activated gene 209",4,0.60895,0.0098201,0.27504,763,43
+"Hoxc6","15425","homeobox C6",4,0.31,0.27585,1,764,330
+"Pou2f1","18986","POU domain, class 2, transcription factor 1",4,0.67973,0.0040152,0.134005,765,29
+"Rcor1","217864","REST corepressor 1",4,0.30979,0.066801,0.819738,766,108
+"Ifi203","15950","interferon activated gene 203",4,0.30763,0.13709,1,767,207
+"Smad2","17126","SMAD family member 2",4,0.33846,0.19204,1,768,274
+"Esrrg","26381","estrogen-related receptor gamma",4,0.56342,0.12277,1,769,190
+"Hoxb6","15414","homeobox B6",4,0.87228,0.021767,0.545367,770,67
+"Atf4","11911","activating transcription factor 4",4,0.26661,0.16582,1,771,249
+"Zfp352","236537","zinc finger protein 352",4,0.22446,0.45228,1,772,468
+"Tbr1","21375","T-box brain transcription factor 1",4,0.32067,0.12691,1,773,196
+"Zfp90","22751","zinc finger protein 90",4,0.4099,0.049525,0.693827,774,96
+"Ikzf3","22780","IKAROS family zinc finger 3",4,0.66463,0.0033213,0.134005,775,24
+"Vezf1","22344","vascular endothelial zinc finger 1",4,0.33579,0.041533,0.693827,776,86
+"Maf","17132","MAF bZIP transcription factor",4,0.32888,0.25556,1,777,322
+"Rhox13","73614","reproductive homeobox 13",4,0.33654,0.099666,0.914118,778,157
+"Rora","19883","RAR-related orphan receptor alpha",4,0.38333,0.13738,1,779,208
+"Plag1","56711","pleiomorphic adenoma gene 1",4,0.24878,0.10203,0.927607,780,161
+"Nfatc4","73181","nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 4",4,0.27881,0.34299,1,781,384
+"Nr2f2","11819","nuclear receptor subfamily 2, group F, member 2",4,0.28115,0.15154,1,782,232
+"Foxi3","232077","forkhead box I3",4,0.38627,0.13402,1,783,201
+"Hoxd13","15433","homeobox D13",4,0.57653,0.019779,0.456606,784,64
+"Gli2","14633","GLI-Kruppel family member GLI2",4,0.88057,0.0014223,0.060188,785,19
+"Myf5","17877","myogenic factor 5",4,0.80093,0.0031541,0.134005,786,22
+"Nr4a1","15370","nuclear receptor subfamily 4, group A, member 1",4,0.621,0.012942,0.367246,787,49
+"Nr1h2","22260","nuclear receptor subfamily 1, group H, member 2",4,0.47065,0.010697,0.311319,788,44
+"Myt1l","17933","myelin transcription factor 1-like",4,0.48406,0.018714,0.45521,789,61
+"Nfat5","54446","nuclear factor of activated T cells 5",4,0.66198,0.0003494,0.009488,790,12
+"Tead4","21679","TEA domain family member 4",4,0.29496,0.015475,0.431151,791,54
+"Mybl1","17864","myeloblastosis oncogene-like 1",4,0.40752,0.013772,0.404726,792,52
+"Foxk2","68837","forkhead box K2",4,0.53712,0.013237,0.377327,793,50
+"Nr5a2","26424","nuclear receptor subfamily 5, group A, member 2",4,0.43113,0.012675,0.367246,794,48
+"Zbtb32","58206","zinc finger and BTB domain containing 32",4,0.61621,0.011291,0.319092,795,46
+"Elk1","13712","ELK1, member of ETS oncogene family",4,0.76497,0.0070236,0.202579,796,38
+"Elf4","56501","E74 like ETS transcription factor 4",4,1.1036,0.0010093,0.039879,797,18
+"Nr3c1","14815","nuclear receptor subfamily 3, group C, member 1",4,0.72528,0.00072917,0.031471,798,14
+"Twist1","22160","twist basic helix-loop-helix transcription factor 1",4,0.68117,0.005676,0.189906,799,35
+"Sim2","20465","single-minded family bHLH transcription factor 2",4,0.4236,0.0052028,0.189906,800,33
+"Foxb2","14240","forkhead box B2",4,0.49066,0.0047598,0.168796,801,31
+"Hivep1","110521","human immunodeficiency virus type I enhancer binding protein 1",4,0.53657,0.0037846,0.134005,802,27
+"Pth","19226","parathyroid hormone",4,0.50915,0.0035662,0.134005,803,25
+"Hif1a","15251","hypoxia inducible factor 1, alpha subunit",4,0.86308,0.00015957,0.008416,804,8
+"Ifi205","226695","interferon activated gene 205",4,0.42814,0.0032951,0.134005,805,23
+"Arnt","11863","aryl hydrocarbon receptor nuclear translocator",4,0.80481,0.00096564,0.039879,806,17
+"Klf2","16598","Kruppel-like transcription factor 2 (lung)",4,0.85329,0.0002941,0.009451,807,11
+"Arid3a","13496","AT-rich interaction domain 3A",4,0.64549,0.00053495,0.01866,808,13
+"Elf1","13709","E74 like ETS transcription factor 1",4,0.79893,0.00025817,0.008416,809,10
+"Ikzf1","22778","IKAROS family zinc finger 1",4,1.1019,8.607e-06,0.000825,810,6
+"Irf2","16363","interferon regulatory factor 2",4,0.93698,5.5499e-06,0.000825,811,5
+"Hic1","15248","hypermethylated in cancer 1",4,1.0445,3.1311e-06,0.000825,812,4
+"Notch1","18128","notch 1",4,1.4047,8.3707e-07,0.000825,813,3
+"Runx3","12399","runt related transcription factor 3",4,1.7527,3.5848e-09,0.000825,814,2
+"Prdm1","12142","PR domain containing 1, with ZNF domain",4,2.7899,2.5703e-12,0.000825,815,1
+"Ezh2","14056","enhancer of zeste 2 polycomb repressive complex 2 subunit",4,-1.5976,1.0292e-07,0.001238,1,768
+"Zbtb7a","16969","zinc finger and BTB domain containing 7a",4,-1.79,3.2157e-06,0.001238,2,815
+"Wt1","22431","WT1 transcription factor",4,-1.3827,3.9559e-06,0.001238,3,814
+"Zbtb17","22642","zinc finger and BTB domain containing 17",4,-2.35,8.8712e-06,0.001238,4,566
+"Mybl2","17865","myeloblastosis oncogene-like 2",4,-2.1131,2.7988e-05,0.006807,5,813
+"Bcl6","12053","B cell leukemia/lymphoma 6",4,-1.0453,3.1617e-05,0.006807,6,812
+"Bcl11b","58208","B cell leukemia/lymphoma 11B",4,-1.996,3.6266e-05,0.006807,7,811
+"Yy1","22632","YY1 transcription factor",4,-1.5107,3.9249e-05,0.006807,8,739
+"Zc3h8","57432","zinc finger CCCH type containing 8",4,-1.1297,7.6046e-05,0.014851,9,656
+"Srf","20807","serum response factor",4,-1.5909,0.00017931,0.023852,10,185
+"Junb","16477","jun B proto-oncogene",4,-1.6338,0.00017972,0.023852,11,783
+"Irf4","16364","interferon regulatory factor 4",4,-1.9589,0.00023846,0.02929,12,810
+"Cebpz","12607","CCAAT/enhancer binding protein zeta",4,-1.9197,0.00030594,0.030845,13,712
+"Thap11","59016","THAP domain containing 11",4,-1.0862,0.00043685,0.032488,14,806
+"Smad4","17128","SMAD family member 4",4,-0.46443,0.00049565,0.032488,15,58
+"Nfya","18044","nuclear transcription factor-Y alpha",4,-0.79401,0.00050405,0.032488,16,809
+"Pou2f2","18987","POU domain, class 2, transcription factor 2",4,-1.1691,0.00065784,0.042807,17,808
+"Arid1a","93760","AT-rich interaction domain 1A",4,-0.62084,0.00073022,0.04813,18,287
+"Nfatc3","18021","nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 3",4,-0.8554,0.00088667,0.073736,19,564
+"Aebp2","11569","AE binding protein 2",4,-0.88619,0.0011766,0.113119,20,802
+"E2f4","104394","E2F transcription factor 4",4,-0.90026,0.001358,0.116014,21,779
+"Mnt","17428","max binding protein",4,-1.0957,0.0014329,0.116014,22,699
+"Zfpm1","22761","zinc finger protein, multitype 1",4,-0.67648,0.0014836,0.116014,23,807
+"Foxp1","108655","forkhead box P1",4,-0.65693,0.0016872,0.136436,24,786
+"Tcf7","21414","transcription factor 7, T cell specific",4,-0.92592,0.0018144,0.136436,25,805
+"Batf","53314","basic leucine zipper transcription factor, ATF-like",4,-1.1154,0.0022426,0.185644,26,535
+"Cdc5l","71702","cell division cycle 5-like",4,-1.6974,0.0028108,0.245508,27,797
+"Rel","19696","reticuloendotheliosis oncogene",4,-1.3984,0.0030596,0.255481,28,252
+"Myc","17869","myelocytomatosis oncogene",4,-0.96564,0.0033783,0.298907,29,534
+"Fosl2","14284","fos-like antigen 2",4,-0.70202,0.003553,0.303465,30,760
+"Fosl1","14283","fos-like antigen 1",4,-0.25176,0.0040932,0.308368,31,273
+"Zfat","380993","zinc finger and AT hook domain containing",4,-0.65911,0.0043522,0.319889,32,708
+"Fos","14281","FBJ osteosarcoma oncogene",4,-0.71493,0.0045987,0.319889,33,804
+"Phb",NA,NA,4,-0.24884,0.0050551,0.319889,34,518
+"Kdm5a","214899","lysine demethylase 5A",4,-0.69803,0.0054719,0.339604,35,626
+"Klf14","619665","Kruppel-like transcription factor 14",4,-0.40059,0.0057696,0.342822,36,803
+"Gcfc2","330361","GC-rich sequence DNA binding factor 2",4,-0.90355,0.0060657,0.391624,37,314
+"Rfx6","320995","regulatory factor X, 6",4,-1.0069,0.0081396,0.482243,38,801
+"Nr2e1","21907","nuclear receptor subfamily 2, group E, member 1",4,-0.46795,0.0084489,0.482243,39,800
+"Qrich1","69232","glutamine-rich 1",4,-0.35744,0.0084624,0.482243,40,586
+"Foxp4","74123","forkhead box P4",4,-0.60638,0.0087674,0.482243,41,617
+"Dmbx1","140477","diencephalon/mesencephalon homeobox 1",4,-0.40088,0.0090278,0.482243,42,799
+"Zic4","22774","zinc finger protein of the cerebellum 4",4,-0.82459,0.0090439,0.482243,43,751
+"Myb","17863","myeloblastosis oncogene",4,-0.48483,0.0092068,0.482243,44,767
+"Csrnp1","215418","cysteine-serine-rich nuclear protein 1",4,-0.4175,0.0093165,0.482243,45,624
+"Hoxa13","15398","homeobox A13",4,-0.38042,0.0093619,0.482243,46,798
+"Tbx21","57765","T-box 21",4,-0.24425,0.0099918,0.499789,47,68
+"Klf16","118445","Kruppel-like transcription factor 16",4,-0.67059,0.010692,0.510103,48,587
+"Egr2","13654","early growth response 2",4,-0.40517,0.010697,0.510103,49,726
+"Zfp746","69228","zinc finger protein 746",4,-0.42833,0.011097,0.511584,50,796
+"Tgif1","21815","TGFB-induced factor homeobox 1",4,-0.62851,0.01307,0.530091,51,761
+"Tfam","21780","transcription factor A, mitochondrial",4,-0.93761,0.013535,0.540461,52,503
+"Foxo1","56458","forkhead box O1",4,-0.43357,0.013988,0.540725,53,81
+"Zfp292","30046","zinc finger protein 292",4,-0.39283,0.015295,0.547885,54,702
+"Tfap4","83383","transcription factor AP4",4,-0.47165,0.015523,0.547885,55,673
+"Ovol3","381867","ovo like zinc finger 3",4,-0.38174,0.016531,0.570456,56,762
+"Hnrnpk","15387","heterogeneous nuclear ribonucleoprotein K",4,-0.53759,0.017331,0.579125,57,525
+"Purb","19291","purine rich element binding protein B",4,-0.38265,0.017499,0.579125,58,608
+"Mga","29808","MAX gene associated",4,-0.46276,0.018202,0.579125,59,558
+"Pitx2","18741","paired-like homeodomain transcription factor 2",4,-0.63104,0.018374,0.579125,60,339
+"Nrf1","18181","nuclear respiratory factor 1",4,-0.6433,0.019779,0.676595,61,744
+"Srebf2","20788","sterol regulatory element binding factor 2",4,-0.5234,0.020137,0.679735,62,749
+"Crebrf","77128","CREB3 regulatory factor",4,-0.24178,0.021046,0.699434,63,231
+"Arid5a","214855","AT-rich interaction domain 5A",4,-0.33314,0.022192,0.726717,64,747
+"Plagl2","54711","pleiomorphic adenoma gene-like 2",4,-0.46608,0.022865,0.743153,65,790
+"Rfx4","71137","regulatory factor X, 4 (influences HLA class II expression)",4,-0.40196,0.023947,0.743153,66,789
+"Jund","16478","jun D proto-oncogene",4,-0.44203,0.023979,0.743153,67,704
+"Rbpjl","19668","recombination signal binding protein for immunoglobulin kappa J region-like",4,-0.30522,0.024551,0.743153,68,261
+"Pcbp1","23983","poly(rC) binding protein 1",4,-0.22489,0.026188,0.743153,69,110
+"Atf5","107503","activating transcription factor 5",4,-0.49425,0.026264,0.743153,70,679
+"Jun","16476","jun proto-oncogene",4,-0.30165,0.026312,0.743153,71,649
+"Neurod2","18013","neurogenic differentiation 2",4,-0.22957,0.026467,0.743153,72,214
+"Nr2c1","22025","nuclear receptor subfamily 2, group C, member 1",4,-0.42589,0.026952,0.743153,73,791
+"Chchd3","66075","coiled-coil-helix-coiled-coil-helix domain containing 3",4,-0.60278,0.027291,0.743153,74,742
+"Olig1","50914","oligodendrocyte transcription factor 1",4,-0.31031,0.027602,0.743153,75,763
+"Zmym3","56364","zinc finger, MYM-type 3",4,-0.32091,0.027711,0.743153,76,703
+"Zic3","22773","zinc finger protein of the cerebellum 3",4,-0.5286,0.02815,0.743153,77,645
+"Scrt1","170729","scratch family zinc finger 1",4,-0.5629,0.029608,0.785861,78,710
+"Ovol2","107586","ovo like zinc finger 2",4,-0.31882,0.031346,0.785861,79,627
+"Nhlh2","18072","nescient helix loop helix 2",4,-0.36242,0.033108,0.785861,80,270
+"Bach2","12014","BTB and CNC homology, basic leucine zipper transcription factor 2",4,-0.56809,0.033785,0.785861,81,284
+"Nr2f1","13865","nuclear receptor subfamily 2, group F, member 1",4,-0.42341,0.03424,0.785861,82,323
+"Creb3l2","208647","cAMP responsive element binding protein 3-like 2",4,-0.33848,0.034883,0.795002,83,689
+"Ptf1a","19213","pancreas specific transcription factor, 1a",4,-0.25498,0.037458,0.863508,84,718
+"Pitx3","18742","paired-like homeodomain transcription factor 3",4,-0.41047,0.039057,0.863508,85,557
+"Hinfp","102423","histone H4 transcription factor",4,-0.45345,0.040421,0.863508,86,145
+"Zfp148","22661","zinc finger protein 148",4,-0.35917,0.040452,0.863508,87,633
+"Zbtb12","193736","zinc finger and BTB domain containing 12",4,-0.30487,0.04113,0.863508,88,672
+"Satb1","20230","special AT-rich sequence binding protein 1",4,-0.13968,0.044139,0.863508,89,439
+"Six6","20476","sine oculis-related homeobox 6",4,-0.28855,0.044248,0.863508,90,591
+"Nr2c2","22026","nuclear receptor subfamily 2, group C, member 2",4,-0.57695,0.04454,0.863508,91,785
+"Zbtb4","75580","zinc finger and BTB domain containing 4",4,-0.1779,0.045571,0.872473,92,511
+"Hoxa10","15395","homeobox A10",4,-0.42526,0.046166,0.872473,93,777
+"Hoxc11","109663","homeobox C11",4,-0.39213,0.046616,0.872473,94,741
+"E4f1","13560","E4F transcription factor 1",4,-0.18109,0.046977,0.872473,95,554
+"Nr5a1","26423","nuclear receptor subfamily 5, group A, member 1",4,-0.31431,0.046982,0.872473,96,485
+"Hes2","15206","hes family bHLH transcription factor 2",4,-0.70298,0.048028,0.894171,97,590
+"Pura","19290","purine rich element binding protein A",4,-0.50193,0.048133,0.894171,98,757
+"Hoxc10","209448","homeobox C10",4,-0.31423,0.050235,0.912748,99,257
+"Figla","26910","folliculogenesis specific basic helix-loop-helix",4,-0.25617,0.051896,0.912748,100,218
+"Ifi213","623121","interferon activated gene 213",4,-0.37354,0.052399,0.912748,101,576
+"Atf3","11910","activating transcription factor 3",4,-0.31338,0.053352,0.912748,102,545
+"Dlx2","13392","distal-less homeobox 2",4,-0.10524,0.053678,0.912748,103,599
+"Foxd4","14237","forkhead box D4",4,-0.095759,0.054171,0.912748,104,363
+"Deaf1","54006","DEAF1, transcription factor",4,-0.44192,0.054997,0.936135,105,660
+"Heyl","56198","hairy/enhancer-of-split related with YRPW motif-like",4,-0.65335,0.055637,0.936135,106,344
+"Rfx2","19725","regulatory factor X, 2 (influences HLA class II expression)",4,-0.43322,0.055934,0.936135,107,667
+"Hoxb5","15413","homeobox B5",4,-0.61119,0.056335,0.936135,108,769
+"Stat2","20847","signal transducer and activator of transcription 2",4,-0.075405,0.05678,0.936135,109,174
+"Nfia","18027","nuclear factor I/A",4,-0.22339,0.057692,0.936135,110,616
+"Pttg1","30939","pituitary tumor-transforming gene 1",4,-0.27168,0.057917,0.936135,111,725
+"Hltf","20585","helicase-like transcription factor",4,-0.76832,0.058203,0.936135,112,585
+"Ylpm1","56531","YLP motif containing 1",4,-0.37966,0.058776,0.936135,113,615
+"Prrx1","18933","paired related homeobox 1",4,-0.34632,0.058896,0.936135,114,746
+"Yy2","100073351","Yy2 transcription factor",4,-0.26363,0.059639,0.936135,115,288
+"Thap1","73754","THAP domain containing, apoptosis associated protein 1",4,-0.31448,0.059939,0.936135,116,584
+"Sp5","64406","trans-acting transcription factor 5",4,-0.34694,0.060799,0.936135,117,696
+"Rlf","109263","rearranged L-myc fusion sequence",4,-0.39098,0.06117,0.936135,118,494
+"Tfap2e","332937","transcription factor AP-2, epsilon",4,-0.63821,0.061383,0.936135,119,743
+"Ybx1","22608","Y box protein 1",4,-0.56068,0.061968,0.936135,120,684
+"Tead2","21677","TEA domain family member 2",4,-0.6175,0.062416,0.936135,121,419
+"Hoxb7","15415","homeobox B7",4,-0.47899,0.06583,0.949451,122,764
+"Sox11","20666","SRY (sex determining region Y)-box 11",4,-0.06994,0.066131,0.949451,123,516
+"Fubp3","320267","far upstream element (FUSE) binding protein 3",4,-0.19912,0.066373,0.949451,124,612
+"Vax2","24113","ventral anterior homeobox 2",4,-0.69219,0.066432,0.949451,125,788
+"Sim1","20464","single-minded family bHLH transcription factor 1",4,-0.15515,0.067442,0.949451,126,324
+"Phox2b","18935","paired-like homeobox 2b",4,-0.40575,0.067925,0.949451,127,606
+"Id3","15903","inhibitor of DNA binding 3",4,-0.29388,0.069576,0.949451,128,607
+"Pou1f1","18736","POU domain, class 1, transcription factor 1",4,-0.26909,0.071331,0.983892,129,719
+"Cys1","12879","cystin 1",4,-0.57007,0.071642,0.983892,130,345
+"Pbx3","18516","pre B cell leukemia homeobox 3",4,-0.51404,0.072336,0.985333,131,781
+"Zic1","22771","zinc finger protein of the cerebellum 1",4,-0.16285,0.072771,0.985333,132,212
+"Alx3","11694","aristaless-like homeobox 3",4,-0.81724,0.072891,0.985333,133,373
+"Runx1","12394","runt related transcription factor 1",4,-0.3955,0.072924,0.985333,134,773
+"Hoxa5","15402","homeobox A5",4,-0.09562,0.073518,1,135,500
+"Pcbp3","59093","poly(rC) binding protein 3",4,-0.17342,0.073711,1,136,771
+"Nhlh1","18071","nescient helix loop helix 1",4,-0.21758,0.075102,1,137,644
+"Txk","22165","TXK tyrosine kinase",4,-0.34951,0.075414,1,138,416
+"Prdm2","110593","PR domain containing 2, with ZNF domain",4,-0.32467,0.075702,1,139,787
+"Foxl1","14241","forkhead box L1",4,-0.15968,0.076104,1,140,104
+"Etv6","14011","ets variant 6",4,-0.25333,0.076688,1,141,653
+"Foxf1","15227","forkhead box F1",4,-0.34306,0.077017,1,142,642
+"Foxd2","17301","forkhead box D2",4,-0.43764,0.077328,1,143,614
+"Nfkb2","18034","nuclear factor of kappa light polypeptide gene enhancer in B cells 2, p49/p100",4,-0.27525,0.079135,1,144,752
+"Pou3f4","18994","POU domain, class 3, transcription factor 4",4,-0.24315,0.079777,1,145,731
+"Sox5","20678","SRY (sex determining region Y)-box 5",4,-0.25554,0.081861,1,146,766
+"Tbx22","245572","T-box 22",4,-0.10244,0.082493,1,147,524
+"Prop1","19127","paired like homeodomain factor 1",4,-0.44432,0.082915,1,148,794
+"Nkx6-1","18096","NK6 homeobox 1",4,-0.31293,0.083339,1,149,669
+"Prdm4","72843","PR domain containing 4",4,-0.64033,0.084404,1,150,272
+"Irf9","16391","interferon regulatory factor 9",4,-0.054814,0.085467,1,151,179
+"Foxj3","230700","forkhead box J3",4,-0.42644,0.085476,1,152,723
+"Vgll3","73569","vestigial like family member 3",4,-0.24368,0.08584,1,153,375
+"Sox14","20669","SRY (sex determining region Y)-box 14",4,-0.23438,0.088866,1,154,501
+"Tef","21685","thyrotroph embryonic factor",4,-0.31452,0.08967,1,155,595
+"Mafa","378435","MAF bZIP transcription factor A",4,-0.31392,0.090735,1,156,637
+"Jarid2","16468","jumonji and AT-rich interaction domain containing 2",4,-0.033213,0.091247,1,157,340
+"Mtf1","17764","metal response element binding transcription factor 1",4,-0.30145,0.091405,1,158,780
+"Ighmbp2","20589","immunoglobulin mu DNA binding protein 2",4,-0.26938,0.09159,1,159,778
+"Mef2a","17258","myocyte enhancer factor 2A",4,-0.13363,0.091629,1,160,540
+"Nrl","18185","neural retina leucine zipper gene",4,-0.27363,0.091853,1,161,563
+"Mlx","21428","MAX-like protein X",4,-0.60385,0.092619,1,162,650
+"Hnf1a","21405","HNF1 homeobox A",4,-0.12959,0.092812,1,163,491
+"Fezf1","73191","Fez family zinc finger 1",4,-0.18512,0.093307,1,164,562
+"Pou5f1","18999","POU domain, class 5, transcription factor 1",4,-0.19149,0.093659,1,165,729
+"Foxj2","60611","forkhead box J2",4,-0.36714,0.095944,1,167,715
+"Tfap2b","21419","transcription factor AP-2 beta",4,-0.017684,0.095947,1,168,424
+"Egr1","13653","early growth response 1",4,-0.22996,0.096174,1,169,793
+"Gm5294",NA,NA,4,-0.12574,0.098182,1,170,350
+"Foxh1","14106","forkhead box H1",4,-0.16172,0.098261,1,171,754
+"Egr3","13655","early growth response 3",4,-0.073968,0.099238,1,172,469
+"Arntl",NA,NA,4,-0.19284,0.099902,1,173,756
+"Tbx2","21385","T-box 2",4,-0.29871,0.10108,1,174,527
+"Glis3","226075","GLIS family zinc finger 3",4,-0.24373,0.10243,1,175,572
+"Irf1","16362","interferon regulatory factor 1",4,-0.36542,0.10279,1,176,772
+"Gata4","14463","GATA binding protein 4",4,-0.3999,0.10323,1,177,792
+"Cggbp1","106143","CGG triplet repeat binding protein 1",4,-0.31678,0.10458,1,178,695
+"Gsc","14836","goosecoid homeobox",4,-0.33025,0.10567,1,179,765
+"Foxo6","329934","forkhead box O6",4,-0.092439,0.10634,1,180,520
+"Foxk1","17425","forkhead box K1",4,-0.36526,0.10675,1,181,530
+"Klf10","21847","Kruppel-like transcription factor 10",4,-0.40131,0.10737,1,182,588
+"Sp9","381373","trans-acting transcription factor 9",4,-0.52794,0.10748,1,183,648
+"Prrx2","20204","paired related homeobox 2",4,-0.48799,0.1084,1,184,691
+"Sp7","170574","Sp7 transcription factor 7",4,-0.22831,0.10857,1,185,470
+"Zeb2","24136","zinc finger E-box binding homeobox 2",4,-0.38492,0.1104,1,186,462
+"Ctcfl","664799","CCCTC-binding factor like",4,-0.007675,0.11047,1,187,319
+"Csrnp2","207785","cysteine-serine-rich nuclear protein 2",4,-0.26868,0.1115,1,188,782
+"Grhl3","230824","grainyhead like transcription factor 3",4,-0.17541,0.11187,1,189,333
+"Pou3f2","18992","POU domain, class 3, transcription factor 2",4,-0.042757,0.11458,1,190,184
+"Lhx1","16869","LIM homeobox protein 1",4,-0.32302,0.11633,1,191,342
+"Nfkb1","18033","nuclear factor of kappa light polypeptide gene enhancer in B cells 1, p105",4,-0.040689,0.11869,1,192,143
+"Macc1","238455","metastasis associated in colon cancer 1",4,-0.10757,0.11933,1,193,486
+"Hif3a","53417","hypoxia inducible factor 3, alpha subunit",4,-0.22213,0.12481,1,194,556
+"Zfp382","233060","zinc finger protein 382",4,-0.32739,0.12583,1,195,692
+"Zfp143","20841","zinc finger protein 143",4,-0.36151,0.12967,1,197,736
+"Nfatc1","18018","nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 1",4,-0.48178,0.12989,1,198,734
+"Ebf4","228598","early B cell factor 4",4,-0.37758,0.13091,1,199,488
+"E2f5","13559","E2F transcription factor 5",4,-0.062656,0.13192,1,200,293
+"Hoxb8","15416","homeobox B8",4,-0.17896,0.13394,1,201,635
+"Trp63","22061","transformation related protein 63",4,-0.53315,0.13594,1,202,654
+"Nr1i3","12355","nuclear receptor subfamily 1, group I, member 3",4,-0.048115,0.13792,1,203,304
+"Gata3","14462","GATA binding protein 3",4,-0.19404,0.13999,1,204,281
+"Vgll2","215031","vestigial like family member 2",4,-0.24944,0.14099,1,205,367
+"Lhx6","16874","LIM homeobox protein 6",4,-0.1314,0.142,1,206,560
+"Gabpa","14390","GA repeat binding protein, alpha",4,-0.15094,0.143,1,207,389
+"Klf1","16596","Kruppel-like transcription factor 1 (erythroid)",4,-0.15971,0.14311,1,208,662
+"Nfic","18029","nuclear factor I/C",4,-0.14747,0.144,1,209,335
+"Foxo4","54601","forkhead box O4",4,-0.28174,0.14431,1,210,282
+"Foxe3","30923","forkhead box E3",4,-0.55315,0.14472,1,211,329
+"Mesp2","17293","mesoderm posterior 2",4,-0.010698,0.149,1,212,338
+"Ehf","13661","ets homologous factor",4,-0.14238,0.15121,1,213,748
+"Meis3","17537","Meis homeobox 3",4,-0.06055,0.15199,1,214,640
+"Nanog","71950","Nanog homeobox",4,-0.28477,0.15367,1,216,334
+"Crem","12916","cAMP responsive element modulator",4,-0.049618,0.15397,1,217,580
+"E2f2","242705","E2F transcription factor 2",4,-0.25297,0.1545,1,218,611
+"Egr4","13656","early growth response 4",4,-0.1211,0.15497,1,219,569
+"Ctcf","13018","CCCTC-binding factor",4,-0.46705,0.15695,1,220,728
+"Sox21","223227","SRY (sex determining region Y)-box 21",4,-0.29829,0.15794,1,221,745
+"Kmt2d","381022","lysine (K)-specific methyltransferase 2D",4,-0.12769,0.15992,1,222,698
+"Hmx1","15371","H6 homeobox 1",4,-0.15937,0.16029,1,223,354
+"Hes3","15207","hes family bHLH transcription factor 3",4,-0.0091995,0.16071,1,224,308
+"Otx2","18424","orthodenticle homeobox 2",4,-0.16064,0.16113,1,225,438
+"Lef1","16842","lymphoid enhancer binding factor 1",4,-0.17422,0.16386,1,226,403
+"Neurog3","11925","neurogenin 3",4,-0.097806,0.17166,1,228,365
+"Npas1","18142","neuronal PAS domain protein 1",4,-0.24215,0.17337,1,231,750
+"Hoxb4","15412","homeobox B4",4,-0.042563,0.17366,1,232,289
+"Tcf3","21423","transcription factor 3",4,-0.10075,0.1738,1,233,632
+"Nucks1","98415","nuclear casein kinase and cyclin-dependent kinase substrate 1",4,-0.2306,0.17808,1,235,775
+"Erg","13876","ETS transcription factor",4,-0.15102,0.17852,1,236,517
+"Zic2","22772","zinc finger protein of the cerebellum 2",4,-0.23464,0.17938,1,237,721
+"Ferd3l","114712","Fer3 like bHLH transcription factor",4,-0.26501,0.18046,1,238,504
+"Six1","20471","sine oculis-related homeobox 1",4,-0.44113,0.18067,1,239,620
+"Gfi1","14581","growth factor independent 1 transcription repressor",4,-0.032935,0.18143,1,240,20
+"Zfp131","72465","zinc finger protein 131",4,-0.58489,0.18434,1,242,784
+"Klf8","245671","Kruppel-like transcription factor 8",4,-0.2378,0.18501,1,243,686
+"Gata1","14460","GATA binding protein 1",4,-0.26546,0.1885,1,244,537
+"Cc2d1a","212139","coiled-coil and C2 domain containing 1A",4,-0.12365,0.18893,1,245,711
+"Atf2","11909","activating transcription factor 2",4,-0.1831,0.19113,1,247,473
+"Nr1d1","217166","nuclear receptor subfamily 1, group D, member 1",4,-0.15527,0.19157,1,248,508
+"Pcgf6","71041","polycomb group ring finger 6",4,-0.05494,0.19299,1,249,479
+"Hivep2","15273","human immunodeficiency virus type I enhancer binding protein 2",4,-0.37368,0.19465,1,251,735
+"Mycs","17870","myc-like oncogene, s-myc protein",4,-0.26805,0.19491,1,252,200
+"Batf2","74481","basic leucine zipper transcription factor, ATF-like 2",4,-0.50577,0.19553,1,253,707
+"Rxrg","20183","retinoid X receptor gamma",4,-0.15671,0.19682,1,254,622
+"Emx2","13797","empty spiracles homeobox 2",4,-0.091184,0.19778,1,255,646
+"Vax1","22326","ventral anterior homeobox 1",4,-0.11724,0.19819,1,256,421
+"Creb3","12913","cAMP responsive element binding protein 3",4,-0.020252,0.19873,1,257,638
+"Etv3","27049","ets variant 3",4,-0.37283,0.19952,1,258,795
+"Zfp683","100503878","zinc finger protein 683",4,-0.25663,0.20041,1,260,737
+"Nr1h5","381463","nuclear receptor subfamily 1, group H, member 5",4,-0.090975,0.20353,1,263,295
+"Rax","19434","retina and anterior neural fold homeobox",4,-0.23308,0.20538,1,264,210
+"Prox1","19130","prospero homeobox 1",4,-0.18188,0.20847,1,265,674
+"Foxj1","15223","forkhead box J1",4,-0.2512,0.20916,1,266,482
+"Zeb1","21417","zinc finger E-box binding homeobox 1",4,-0.14745,0.20937,1,267,636
+"Otx1","18423","orthodenticle homeobox 1",4,-0.14909,0.21027,1,268,362
+"Snai1","20613","snail family zinc finger 1",4,-0.38373,0.21117,1,269,268
+"Klf3","16599","Kruppel-like transcription factor 3 (basic)",4,-0.11763,0.21481,1,270,613
+"Patz1","56218","POZ (BTB) and AT hook containing zinc finger 1",4,-0.12936,0.22574,1,272,549
+"Nkx6-2","14912","NK6 homeobox 2",4,-0.088831,0.2285,1,274,505
+"Cnbp","12785","cellular nucleic acid binding protein",4,-0.31175,0.22972,1,276,759
+"Tcf12","21406","transcription factor 12",4,-0.068571,0.22988,1,277,493
+"Rreb1","68750","ras responsive element binding protein 1",4,-0.60978,0.23065,1,278,544
+"Hlf","217082","hepatic leukemia factor",4,-0.1865,0.2308,1,279,628
+"Spib","272382","Spi-B transcription factor (Spi-1/PU.1 related)",4,-0.11948,0.23126,1,280,677
+"Sp3","20687","trans-acting transcription factor 3",4,-0.39152,0.23342,1,281,72
+"Six3","20473","sine oculis-related homeobox 3",4,-0.54309,0.23404,1,282,770
+"Gata5","14464","GATA binding protein 5",4,-0.21794,0.23802,1,285,605
+"Sox30","214105","SRY (sex determining region Y)-box 30",4,-0.19211,0.23915,1,286,663
+"Hoxa9","15405","homeobox A9",4,-0.097327,0.23985,1,287,600
+"Irf3","54131","interferon regulatory factor 3",4,-0.13366,0.24101,1,288,472
+"Lmx1b","16917","LIM homeobox transcription factor 1 beta",4,-0.11457,0.25132,1,290,528
+"Ppara","19013","peroxisome proliferator activated receptor alpha",4,-0.20286,0.25179,1,291,619
+"Sp6","83395","trans-acting transcription factor 6",4,-0.063963,0.2526,1,292,671
+"Neurod1","18012","neurogenic differentiation 1",4,-0.27334,0.25273,1,293,652
+"Zic5","65100","zinc finger protein of the cerebellum 5",4,-0.32414,0.25441,1,294,236
+"Nfix","18032","nuclear factor I/X",4,-0.18442,0.25711,1,295,705
+"Myt1","17932","myelin transcription factor 1",4,-0.15498,0.25801,1,296,484
+"Rarb","218772","retinoic acid receptor, beta",4,-0.16842,0.25891,1,297,409
+"Nfil3","18030","nuclear factor, interleukin 3, regulated",4,-0.050283,0.26161,1,298,440
+"Zmym2","76007","zinc finger, MYM-type 2",4,-0.03243,0.2641,1,299,541
+"Klf4","16600","Kruppel-like transcription factor 4 (gut)",4,-0.12928,0.26552,1,300,138
+"Creb3l4","78284","cAMP responsive element binding protein 3-like 4",4,-0.12712,0.26695,1,302,717
+"Lmx1a","110648","LIM homeobox transcription factor 1 alpha",4,-0.16176,0.26964,1,303,259
+"Max","17187","Max protein",4,-0.17948,0.27125,1,304,621
+"Skil","20482","SKI-like",4,-0.11096,0.27231,1,305,581
+"Foxq1","15220","forkhead box Q1",4,-0.065991,0.27408,1,306,625
+"Pax7","18509","paired box 7",4,-0.10698,0.27496,1,307,604
+"Camta1","100072","calmodulin binding transcription activator 1",4,-0.25087,0.27761,1,309,490
+"Gm9376","668814","predicted gene 9376",4,-0.049296,0.28326,1,311,435
+"Phox2a","11859","paired-like homeobox 2a",4,-0.23026,0.28374,1,312,753
+"Bach1","12013","BTB and CNC homology 1, basic leucine zipper transcription factor 1",4,-0.10978,0.28567,1,315,618
+"Cebpe","110794","CCAAT/enhancer binding protein epsilon",4,-0.35732,0.28901,1,316,515
+"Dmtf1","23857","cyclin D binding myb like transcription factor 1",4,-0.085417,0.28988,1,317,321
+"Esx1","13984","extraembryonic, spermatogenesis, homeobox 1",4,-0.24934,0.29075,1,318,668
+"Hoxc5","15424","homeobox C5",4,-0.30536,0.29099,1,319,533
+"Irf7","54123","interferon regulatory factor 7",4,-0.078013,0.29341,1,321,657
+"Tcf4","21413","transcription factor 4",4,-0.16897,0.29438,1,323,387
+"Sox1","20664","SRY (sex determining region Y)-box 1",4,-0.23478,0.29584,1,324,639
+"Glis1","230587","GLIS family zinc finger 1",4,-0.0044263,0.29595,1,325,498
+"Barx2","12023","BarH-like homeobox 2",4,-0.25882,0.29778,1,327,446
+"Myod1","17927","myogenic differentiation 1",4,-0.069772,0.29973,1,330,567
+"Tead1","21676","TEA domain family member 1",4,-0.30373,0.30371,1,331,720
+"Zfp219","69890","zinc finger protein 219",4,-0.50599,0.30456,1,332,366
+"Zfp281","226442","zinc finger protein 281",4,-0.14957,0.30542,1,334,150
+"Ezh1","14055","enhancer of zeste 1 polycomb repressive complex 2 subunit",4,-0.090018,0.30607,1,335,538
+"Foxl2","26927","forkhead box L2",4,-0.11386,0.30969,1,337,574
+"Purg","75029","purine-rich element binding protein G",4,-0.037484,0.30998,1,338,175
+"Bcl6b","12029","B cell CLL/lymphoma 6, member B",4,-0.25817,0.3139,1,340,579
+"Zbtb6","241322","zinc finger and BTB domain containing 6",4,-0.00036141,0.31783,1,343,341
+"Snai2","20583","snail family zinc finger 2",4,-0.069943,0.33063,1,347,458
+"Eomes","13813","eomesodermin",4,-0.098317,0.33606,1,353,709
+"Grhl1","195733","grainyhead like transcription factor 1",4,-0.04115,0.33657,1,354,318
+"Zmym4","67785","zinc finger, MYM-type 4",4,-0.15697,0.33739,1,355,683
+"Pax8","18510","paired box 8",4,-0.072869,0.34151,1,357,727
+"Zbtb34","241311","zinc finger and BTB domain containing 34",4,-0.040813,0.34299,1,359,480
+"Nkx2-5","18091","NK2 homeobox 5",4,-0.087085,0.34316,1,360,522
+"Sox18","20672","SRY (sex determining region Y)-box 18",4,-0.14736,0.34795,1,365,659
+"Helt","234219","helt bHLH transcription factor",4,-0.089272,0.34889,1,366,561
+"Tal2","21350","T cell acute lymphocytic leukemia 2",4,-0.2042,0.35093,1,368,623
+"Pbx1","18514","pre B cell leukemia homeobox 1",4,-0.11672,0.35292,1,371,658
+"Six2","20472","sine oculis-related homeobox 2",4,-0.11764,0.35342,1,372,597
+"Klf6","23849","Kruppel-like transcription factor 6",4,-0.093871,0.35491,1,374,716
+"Tcf20","21411","transcription factor 20",4,-0.122,0.35739,1,378,666
+"Zbtb2","381990","zinc finger and BTB domain containing 2",4,-0.14303,0.35863,1,379,630
+"Smad1","17125","SMAD family member 1",4,-0.15726,0.36088,1,380,583
+"Foxe1","110805","forkhead box E1",4,-0.30563,0.36138,1,381,755
+"Zbtb26","320633","zinc finger and BTB domain containing 26",4,-0.10931,0.37381,1,386,700
+"Dbp","13170","D site albumin promoter binding protein",4,-0.10652,0.37698,1,388,730
+"Sox8","20681","SRY (sex determining region Y)-box 8",4,-0.0064362,0.37777,1,389,565
+"Gcm2","107889","glial cells missing homolog 2",4,-0.0054259,0.37883,1,391,346
+"Etv5","104156","ets variant 5",4,-0.11109,0.37934,1,392,609
+"Zfp202","80902","zinc finger protein 202",4,-0.21482,0.37983,1,393,774
+"Ebf1","13591","early B cell factor 1",4,-0.030594,0.38382,1,395,571
+"Tbx5","21388","T-box 5",4,-0.10518,0.38561,1,396,529
+"Phf6","70998","PHD finger protein 6",4,-0.058769,0.38882,1,398,688
+"Crx","12951","cone-rod homeobox",4,-0.091185,0.38951,1,400,610
+"Pgr","18667","progesterone receptor",4,-0.0059353,0.39032,1,402,483
+"Foxf2","14238","forkhead box F2",4,-0.10367,0.39261,1,404,733
+"Ascl1","17172","achaete-scute family bHLH transcription factor 1",4,-0.1555,0.39282,1,405,550
+"Hoxa2","15399","homeobox A2",3,-0.10213,0.39823,1,408,417
+"Hes1","15205","hes family bHLH transcription factor 1",4,-0.24414,0.40491,1,410,732
+"Mycl","16918","v-myc avian myelocytomatosis viral oncogene lung carcinoma derived",4,-0.046078,0.41099,1,411,664
+"Ikzf5","67143","IKAROS family zinc finger 5",4,-0.058219,0.41476,1,413,455
+"Zfp523","224656","zinc finger protein 523",4,-0.053781,0.41551,1,414,559
+"Ets2","23872","E26 avian leukemia oncogene 2, 3' domain",4,-0.052448,0.41927,1,415,601
+"Noto","384452","notochord homeobox",4,-0.31765,0.42151,1,417,724
+"Hnf4a","15378","hepatic nuclear factor 4, alpha",4,-0.11487,0.43776,1,425,306
+"Onecut3","246086","one cut domain, family member 3",4,-0.037427,0.43995,1,428,555
+"Emx1","13796","empty spiracles homeobox 1",4,-0.063065,0.47689,1,435,351
+"Zfp384","269800","zinc finger protein 384",4,-0.11697,0.47758,1,436,670
+"Pou6f2","218030","POU domain, class 6, transcription factor 2",4,-0.15722,0.48446,1,439,680
+"En1","13798","engrailed 1",4,-0.031727,0.48515,1,440,603
+"Mypop","232934","Myb-related transcription factor, partner of profilin",4,-5.9109e-05,0.49398,1,444,418
+"Sox7","20680","SRY (sex determining region Y)-box 7",4,-0.070488,0.51525,1,450,681
+"Litaf","56722","LPS-induced TN factor",4,-0.23827,0.5159,1,451,655
+"Dlx4","13394","distal-less homeobox 4",4,-0.04145,0.53962,1,456,437
+"Elk3","13713","ELK3, member of ETS oncogene family",4,-0.012387,0.55084,1,462,433
+"Mixl1","27217","Mix paired-like homeobox",4,-0.12856,0.55269,1,463,546
+"Atoh1","11921","atonal bHLH transcription factor 1",4,-0.092976,0.56908,1,468,661
+"Arnt2","11864","aryl hydrocarbon receptor nuclear translocator 2",4,-0.09604,0.5821,1,472,641
+"Lhx8","16875","LIM homeobox protein 8",4,-0.16016,0.59195,1,475,693
+"Alx4","11695","aristaless-like homeobox 4",4,-0.077602,0.59653,1,477,602
+"Zgpat","229007","zinc finger, CCCH-type with G patch domain",4,-0.19808,0.60557,1,481,432
+"Pou4f2","18997","POU domain, class 4, transcription factor 2",4,-0.079535,0.61391,1,487,506
+"Arid5b","71371","AT-rich interaction domain 5B",4,-0.076755,0.61501,1,488,706
+"Usf1","22278","upstream transcription factor 1",4,-0.009899,0.61993,1,492,475
+"Prdm5","70779","PR domain containing 5",4,-0.097977,0.6696,1,520,675
+"Irf8","15900","interferon regulatory factor 8",4,-0.043425,0.68264,1,528,568
+"Rela","19697","v-rel reticuloendotheliosis viral oncogene homolog A (avian)",4,-0.03633,0.68407,1,530,593
+"Msx2","17702","msh homeobox 2",4,-0.014259,0.69066,1,533,442
+"Pitx1","18740","paired-like homeodomain transcription factor 1",4,-0.041723,0.7098,1,547,575
+"Mef2b","17259","myocyte enhancer factor 2B",4,-0.081154,0.71686,1,550,685
+"Irx6","64379","Iroquois homeobox 6",4,-0.027964,0.72677,1,556,634
+"Zbtb20","56490","zinc finger and BTB domain containing 20",4,-0.026719,0.7272,1,557,722
+"Spic","20728","Spi-C transcription factor (Spi-1/PU.1 related)",4,-0.10238,0.72889,1,558,714
+"Hdac5","15184","histone deacetylase 5",4,-0.10479,0.72974,1,559,776
+"Foxd1","15229","forkhead box D1",4,-0.069158,0.73058,1,561,701
+"Mlxipl","58805","MLX interacting protein-like",4,-0.15132,0.731,1,562,758
+"Bhlhe40","20893","basic helix-loop-helix family, member e40",4,-0.092461,0.74823,1,571,697
+"Yap1","22601","yes-associated protein 1",4,-0.040434,0.76271,1,581,643
+"Gsx1","14842","GS homeobox 1",4,-0.10802,0.77064,1,586,738
+"Klf5","12224","Kruppel-like transcription factor 5",4,-0.081189,0.78943,1,603,647
+"Mlxip","208104","MLX interacting protein",4,-0.044496,0.79804,1,609,713
+"Zfp24","59057","zinc finger protein 24",4,-0.037603,0.80057,1,611,512
+"Dach1","13134","dachshund family transcription factor 1",4,-0.064265,0.82748,1,635,694
+"Gzf1","74533","GDNF-inducible zinc finger protein 1",4,-0.0012105,0.88658,1,694,740

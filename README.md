@@ -144,11 +144,16 @@ CRISPR-screening-data-analysis/
 │   ├── protocol_analysis.md
 │   ├── input_files.md
 │   └── output_files.md
+├── expected_results/               # Reference outputs of the demo run (per comparison)
+│   ├── TF_<groupA>.vs.<groupB>/
+│   └── library_qc_<sample>_<n>.pdf
 └── results/
     └── README.md
 ```
 
 > **Note:** The `rawdata/` files in this repository are **downsampled demo data** (80万 reads per sample) for testing the workflow. Full-size data should be prepared following the layout described in [Input files](#input-files).
+
+> **Note:** `expected_results/` holds the complete output of the workflow run on the demo data (MAGeCK count/test tables, MAGeCKFlute PDF reports and library QC plots), so a new run can be diffed against it. These files are tracked on purpose and are exempt from the output-ignoring rules in `.gitignore`.
 
 ## Requirements
 

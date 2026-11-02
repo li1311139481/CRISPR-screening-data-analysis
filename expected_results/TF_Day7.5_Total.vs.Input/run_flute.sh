@@ -1,0 +1,3 @@
+#!/bin/bash
+set -euo pipefail
+'Rscript' '/root/zf/crispr/CRISPR-screening-data-analysis/scripts/mageck_flute.R' '/root/zf/crispr/CRISPR-screening-data-analysis/TF_Day7.5_Total.vs.Input' 'Input_1,Input_2,Day7.5_Total_1,Day7.5_Total_2,Day7.5_Total_3' 'Day7.5_Total.vs.Input'

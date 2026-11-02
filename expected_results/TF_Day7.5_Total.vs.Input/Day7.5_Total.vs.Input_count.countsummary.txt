@@ -1,0 +1,6 @@
+File	Label	Reads	Mapped	Percentage	TotalsgRNAs	Zerocounts	GiniIndex	NegSelQC	NegSelQCPval	NegSelQCPvalPermutation	NegSelQCPvalPermutationFDR	NegSelQCGene
+/root/zf/crispr/CRISPR-screening-data-analysis/cutadapt/S1_1.trm.fq.gz	Input_1	785729	471045	0.5995	3556	7	0.1058	0	1	1	1	0.0
+/root/zf/crispr/CRISPR-screening-data-analysis/cutadapt/S2_1.trm.fq.gz	Input_2	787032	619864	0.7876	3556	6	0.09854	0	1	1	1	0.0
+/root/zf/crispr/CRISPR-screening-data-analysis/cutadapt/S3_1.trm.fq.gz	Day7.5_Total_1	785048	493897	0.6291	3556	26	0.1321	0	1	1	1	0.0
+/root/zf/crispr/CRISPR-screening-data-analysis/cutadapt/S4_1.trm.fq.gz	Day7.5_Total_2	786987	629405	0.7998	3556	20	0.1214	0	1	1	1	0.0
+/root/zf/crispr/CRISPR-screening-data-analysis/cutadapt/S5_1.trm.fq.gz	Day7.5_Total_3	769770	612186	0.7953	3556	17	0.1161	0	1	1	1	0.0

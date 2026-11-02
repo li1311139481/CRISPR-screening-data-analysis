@@ -21,3 +21,5 @@ Major output files:
 | `MissedsgRNAView.pdf` | Missed sgRNA ratio plot |
 | `VolcanoView.pdf` | MAGeCKFlute volcano plot (also serves as completion marker) |
 | `*_MAGeCKFlute_report.pdf` | Integrated report |
+
+The complete output produced by the demo dataset is committed under [`expected_results/`](../expected_results/), with one subfolder per comparison plus the per-sample library QC plots. Use it as a reference when verifying a new run.
