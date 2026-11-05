@@ -51,8 +51,8 @@ sbatch run.slurm
 #   - a merged all-samples count table at all_samples.count.txt
 #
 # 5. (Optional) Re-generate figures on demand. See "Step 4: Batch plotting" below.
-python scripts/plot_library_qc.py -i ${DIR}/all_samples.count.txt --all -o ${DIR}/
-python scripts/postprocess.py -d ${DIR} -n TF --flute-only
+python3 scripts/plot_library_qc.py -i ${DIR}/all_samples.count.txt --all -o ${DIR}/
+python3 scripts/postprocess.py -d ${DIR} -n TF --flute-only
 ```
 
 ## Workflow
@@ -278,7 +278,7 @@ The script processes `rawdata/*/*_1.f*q.gz` (R1 reads only). Trimmed FASTQ files
 ### Step 2: Generate and submit MAGeCK comparisons
 
 ```bash
-python scripts/screening_run_all.py \
+python3 scripts/screening_run_all.py \
     -d /path/to/project \
     -l config/TF_library.csv \
     -c config/TF_library_control_id.txt \
@@ -300,7 +300,7 @@ python scripts/screening_run_all.py \
 | `--submit` | Automatically submit the Slurm job (on machines without Slurm, prints a warning plus manual run instructions instead of failing) |
 | `--nodelist` | Slurm nodelist (e.g. node2), omit if not needed |
 | `--partition` | Slurm partition name (omit to use the cluster default) |
-| `--python` | Python executable to embed in generated commands (default `python`, resolved from PATH after `conda activate`) |
+| `--python` | Python executable embedded in the generated commands (default: the interpreter running the script itself, i.e. `sys.executable`; pass `python3` instead if that absolute path is not available on the compute nodes) |
 | `--mageck-wrapper` | Path to `mageck.py` (default: auto-detect) |
 | `--with-postprocess` | Also merge counts + generate library QC + MAGeCKFlute reports after count/test (used by `demo_run.sh`) |
 
@@ -326,7 +326,7 @@ parallel --jobs 8 < ${DIR}/commands.sh
 bash ${DIR}/commands.sh
 
 # 2) optional: post-processing (only when you used --with-postprocess)
-python scripts/postprocess.py -d ${DIR} -n TF --qc --flute
+python3 scripts/postprocess.py -d ${DIR} -n TF --qc --flute
 ```
 
 `run.slurm` is still written in that case, but it is only usable on a Slurm cluster.
@@ -337,7 +337,7 @@ MAGeCKFlute reports after count/test finish, pass `--with-postprocess` (this is 
 `examples/demo_run.sh` does):
 
 ```bash
-python scripts/screening_run_all.py \
+python3 scripts/screening_run_all.py \
     -d ${DIR} -l config/TF_library.csv -c config/TF_library_control_id.txt \
     -p 8 -n TF --submit --with-postprocess
 ```
@@ -392,7 +392,7 @@ them **on demand** after the analysis, two commands cover everything:
 **a) All-samples library QC** (one PDF per sample, project root):
 
 ```bash
-python scripts/plot_library_qc.py \
+python3 scripts/plot_library_qc.py \
   -i ${DIR}/all_samples.count.txt \
   --all \
   -o ${DIR}/
@@ -402,7 +402,7 @@ python scripts/plot_library_qc.py \
 integrated report per comparison directory):
 
 ```bash
-python scripts/postprocess.py \
+python3 scripts/postprocess.py \
   -d ${DIR} \
   -n TF \
   --flute-only
@@ -422,6 +422,7 @@ Rscript scripts/mageck_flute.R ${DIR}/TF_Day7.5_Total.vs.Input/ \
 ## Notes
 
 - If using a different vector backbone, adjust the adapter sequence in `run_cutadapt.sh` accordingly.
+- Always invoke the scripts with an explicit Python 3 interpreter (`python3 scripts/...`). On some servers an unrelated tool installed under the same `PATH` provides a `python` that is still Python 2, in which case `python scripts/...` fails with a `SyntaxError` on the first type annotation. The environment's interpreter is embedded into the generated commands automatically, so the `--python` option is only needed when the absolute path is not visible on the compute nodes.
 - `VolcanoView.pdf` serves as a completion marker — if it exists, that comparison is skipped on re-run.
 - Replace `config/TF_library.csv` and `config/TF_library_control_id.txt` with your own library files, and edit `meta.data.csv` to match your sample metadata before running.
 - This workflow was developed for mouse CRISPR screens using `org.Mm.eg.db`. For human screens, update `mageck_flute.R` to use `org.Hs.eg.db`.

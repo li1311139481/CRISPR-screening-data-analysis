@@ -53,7 +53,7 @@ bash scripts/run_cutadapt.sh "${DIR}" "${THREADS}"
 #   --with-postprocess makes run.slurm additionally auto-generate the merged
 #   count table, per-sample library QC, and per-comparison MAGeCKFlute reports
 #   after count/test finish (the full one-command end-to-end run).
-python scripts/screening_run_all.py \
+python3 scripts/screening_run_all.py \
     -d "${DIR}" \
     -l config/TF_library.csv \
     -c config/TF_library_control_id.txt \

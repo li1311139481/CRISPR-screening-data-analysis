@@ -10,6 +10,7 @@ import argparse
 import glob
 import os
 import subprocess as sb
+import sys
 
 import pandas as pd
 
@@ -84,8 +85,9 @@ def main() -> None:
                     "optionally also run library QC (--qc) and/or MAGeCKFlute reports (--flute).")
     ap.add_argument("-d", "--DIR", required=True, help="Project working directory")
     ap.add_argument("-n", "--prefix", default="TF", help="Output folder prefix, e.g. TF")
-    ap.add_argument("--python", default="python",
-                    help="Python executable to run plot_library_qc.py (default 'python', resolved from PATH)")
+    ap.add_argument("--python", default=sys.executable,
+                    help="Python executable to run plot_library_qc.py "
+                         "(default: the interpreter running this script)")
     ap.add_argument("-s", "--scripts", default=None, help="Path to scripts dir (default: alongside this file)")
     ap.add_argument("--qc", action="store_true",
                     help="Also run per-sample library QC (plot_library_qc.py --all) after merging")

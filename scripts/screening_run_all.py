@@ -6,6 +6,7 @@ import os
 import shlex
 import shutil
 import subprocess as sb
+import sys
 from itertools import permutations
 
 import pandas as pd
@@ -29,10 +30,12 @@ def main() -> None:
                              "warning with manual run instructions is printed instead.")
     parser.add_argument("--nodelist", default=None, help="Slurm nodelist (e.g. node2), omit if not needed")
     parser.add_argument("--partition", default=None, help="Slurm partition name (omit to use the cluster default)")
-    parser.add_argument("--python", default="python",
+    parser.add_argument("--python", default=sys.executable,
                         help="Python executable to embed in generated commands "
-                             "(default 'python' -> resolved from PATH after `conda activate`; "
-                             "override with an absolute path only if needed)")
+                             "(default: the interpreter running this script, so the "
+                             "commands always use the same environment; pass e.g. "
+                             "'python3' if that absolute path does not exist on the "
+                             "compute nodes)")
     parser.add_argument("--mageck-wrapper", default=None, help="Path to mageck.py wrapper")
     parser.add_argument("--with-postprocess", action="store_true",
                         help="After parallel count/test jobs, also run postprocess.py "
@@ -52,6 +55,13 @@ def main() -> None:
 
     print(f"library is: {library}")
     print(f"control_id is: {controlid}")
+    print(f"python interpreter is: {sys.executable}")
+    path_python = shutil.which("python")
+    if path_python and os.path.realpath(path_python) != os.path.realpath(sys.executable):
+        print(f"[WARN] `python` on PATH is {path_python}, which is not the interpreter running "
+              f"this script. The generated commands use {sys.executable}, so they are not "
+              f"affected. If `python` is not Python 3 on this machine, always start the "
+              f"scripts with `python3`.")
 
     metadata_path = args.metadata or os.path.join(DIR, "meta.data.csv")
     print(f"metadata is: {metadata_path}")
