@@ -32,6 +32,10 @@ DIR=$(pwd)
 conda env create -f environment.yml
 conda activate crispr-screen-analysis
 
+# Before continuing, make sure the active interpreter is the one from this
+# environment (it must point into .../envs/crispr-screen-analysis/bin/):
+python3 -c "import sys; print(sys.executable)"
+
 # If MAGeCKFlute fails to install via conda, install from Bioconductor:
 # Rscript -e 'BiocManager::install("MAGeCKFlute")'
 
