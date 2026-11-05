@@ -310,17 +310,25 @@ python3 scripts/screening_run_all.py \
 
 The script generates `n × (n - 1)` directional pairwise comparisons from all groups in `meta.data.csv`. Comparisons that already have `VolcanoView.pdf` are automatically skipped, allowing safe re-runs on incomplete analyses.
 
-Without `--submit`, only `commands.sh` and `run.slurm` are generated. Submit manually with:
+Without `--submit`, only `commands.sh` and `run.slurm` are generated, and the script prints
+how to run them. Both of these do the same thing:
 
 ```bash
-sbatch run.slurm
+sbatch run.slurm      # on a machine with Slurm
+bash run.slurm        # on a machine without Slurm (the file is plain bash)
 ```
 
 #### Running on a machine without Slurm
 
-`sbatch` is auto-detected. If it is not on `PATH` (workstation, local server, container),
-`--submit` does **not** raise an error — it prints a warning banner and exits successfully,
-telling you exactly what to run by hand:
+Apart from the `#SBATCH` comment lines, `run.slurm` is a plain bash script, so it runs directly:
+
+```bash
+bash run.slurm
+```
+
+That executes the same two stages as a Slurm submission: the parallel MAGeCK count/test jobs, then
+(when `--with-postprocess` was used) the post-processing step. Running the stages by hand is
+equivalent:
 
 ```bash
 # 1) MAGeCK count/test (GNU parallel, -p jobs at a time)
@@ -329,11 +337,13 @@ parallel --jobs 8 < ${DIR}/commands.sh
 # no GNU parallel? run sequentially instead
 bash ${DIR}/commands.sh
 
-# 2) optional: post-processing (only when you used --with-postprocess)
+# 2) post-processing (only when you used --with-postprocess)
 python3 scripts/postprocess.py -d ${DIR} -n TF --qc --flute
 ```
 
-`run.slurm` is still written in that case, but it is only usable on a Slurm cluster.
+`sbatch` is auto-detected. If it is not on `PATH` (workstation, local server, container), `--submit`
+does **not** raise an error: it prints a warning and the same run instructions, then exits
+successfully.
 
 By default, `run.slurm` only runs the parallel MAGeCK **count/test** jobs. To also
 auto-generate the merged count table, per-sample library QC, and per-comparison

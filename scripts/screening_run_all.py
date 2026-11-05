@@ -57,11 +57,18 @@ def main() -> None:
     print(f"control_id is: {controlid}")
     print(f"python interpreter is: {sys.executable}")
     path_python = shutil.which("python")
-    if path_python and os.path.realpath(path_python) != os.path.realpath(sys.executable):
-        print(f"[WARN] `python` on PATH is {path_python}, which is not the interpreter running "
-              f"this script. The generated commands use {sys.executable}, so they are not "
-              f"affected. If `python` is not Python 3 on this machine, always start the "
-              f"scripts with `python3`.")
+    if path_python:
+        try:
+            probe = sb.run([path_python, "-c", "import sys; print(sys.version_info[0])"],
+                           capture_output=True, text=True, timeout=30)
+            major = probe.stdout.strip()
+        except (OSError, sb.SubprocessError):
+            major = ""
+        if major and major != "3":
+            print(f"[WARN] `python` on PATH is {path_python} (Python {major}), which is not the "
+                  f"interpreter running this script. The generated commands use "
+                  f"{sys.executable}, so they are not affected - but on this machine always "
+                  f"start the scripts with `python3`.")
 
     metadata_path = args.metadata or os.path.join(DIR, "meta.data.csv")
     print(f"metadata is: {metadata_path}")
@@ -172,32 +179,37 @@ parallel --jobs {parallel} < {command_file}
 
     print(f"\nGenerated {generated} commands")
     print(f"command script generated at:\n{command_file}\n")
-    print(f"Slurm job script generated at:\n{slurm_file}\n")
+    print(f"job script generated at:\n{slurm_file}\n")
+
+    # Always show both ways of running the job. Apart from the #SBATCH comment
+    # lines, run.slurm is plain bash, so `bash run.slurm` reproduces the whole
+    # run (parallel count/test + post-processing) on a machine without Slurm.
+    bar = "=" * 74
+    print(bar)
+    print("How to run")
+    print(bar)
+    print("  1) On a machine with Slurm:")
+    print(f"       sbatch {slurm_file}")
+    print("\n  2) On a machine WITHOUT Slurm - run the same script with bash")
+    print("     (it contains the same count/test and post-processing steps):")
+    print(f"       bash {slurm_file}")
+    print("\n     Equivalent, stage by stage:")
+    print(f"       {'count + test, in parallel:':<30}parallel --jobs {parallel} < {command_file}")
+    print(f"       {'count + test, sequential:':<30}bash {command_file}")
+    if postprocess_cmd:
+        print(f"       {'merge + QC + MAGeCKFlute:':<30}{postprocess_cmd}")
+    print(bar + "\n")
 
     if not args.submit:
-        print("Slurm script generated but not submitted. Add --submit to submit automatically.")
+        print("Nothing was submitted. Re-run with --submit to submit it automatically.")
         return
 
     sbatch = shutil.which("sbatch")
     if sbatch is None:
         # No Slurm on this machine: do not fail, but make it impossible to miss.
-        bar = "=" * 74
-        print(f"\n{bar}")
         print("WARNING: 'sbatch' not found - this machine has NO Slurm workload manager.")
-        print("         Nothing was submitted. You must run the jobs yourself:")
-        print(bar)
-        print(f"\n  1) Run the {generated} MAGeCK count/test jobs listed in:")
-        print(f"       {command_file}")
-        print(f"\n     With GNU parallel ({parallel} jobs at a time):")
-        print(f"       parallel --jobs {parallel} < {command_file}")
-        print("\n     Without GNU parallel (sequential, slower):")
-        print(f"       bash {command_file}")
-        if postprocess_cmd:
-            print(f"\n  2) After all comparisons finish, run post-processing:")
-            print(f"       {postprocess_cmd}")
-        print(f"\n  Note: {slurm_file} was still written, but it only works on a")
-        print("        cluster that provides Slurm.")
-        print(f"{bar}\n")
+        print("         Nothing was submitted. Run the job with:")
+        print(f"           bash {slurm_file}")
         return
 
     print("Submitting Slurm job")
